@@ -1,5 +1,3 @@
-#pragma once
-
 struct dsu {
     public:
     dsu() : _n(0) {}
