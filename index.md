@@ -8,13 +8,13 @@ data:
       title: DataStructure/segtree.hpp
   - name: Graph
     pages:
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: Graph/dsu.hpp
       title: Union Find
   verificationCategories:
   - name: Test/Aizu Online Judge/DSL
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Test/Aizu Online Judge/DSL/DSL_1_A.test.cpp
       title: Test/Aizu Online Judge/DSL/DSL_1_A.test.cpp
 layout: toppage

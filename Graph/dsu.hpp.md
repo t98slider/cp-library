@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: Test/Aizu Online Judge/DSL/DSL_1_A.test.cpp
+    title: Test/Aizu Online Judge/DSL/DSL_1_A.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 2 \"Graph/dsu.hpp\"\n\nstruct dsu {\n    public:\n    dsu()\
@@ -61,8 +64,9 @@ data:
   path: Graph/dsu.hpp
   requiredBy: []
   timestamp: '2023-06-18 12:44:37+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - Test/Aizu Online Judge/DSL/DSL_1_A.test.cpp
 documentation_of: Graph/dsu.hpp
 layout: document
 title: Union Find
