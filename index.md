@@ -11,6 +11,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Graph/dsu.hpp
       title: Union Find
+    - icon: ':warning:'
+      path: Graph/scc.hpp
+      title: Graph/scc.hpp
   verificationCategories:
   - name: Test/Aizu Online Judge/DSL
     pages:
