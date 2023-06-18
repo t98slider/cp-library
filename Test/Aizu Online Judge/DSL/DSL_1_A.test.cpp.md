@@ -16,11 +16,11 @@ data:
     - https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/1/DSL_1_A
   bundledCode: "#line 1 \"Test/Aizu Online Judge/DSL/DSL_1_A.test.cpp\"\n#define PROBLEM\
     \ \"https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/1/DSL_1_A\"\n\n#include\
-    \ <bits/stdc++.h>\n#line 2 \"Graph/dsu.hpp\"\n\nstruct dsu {\n    public:\n  \
-    \  dsu() : _n(0) {}\n    dsu(int n) : _n(n), num_component(n), parent_or_size(n,\
-    \ -1) {}\n\n    int merge(int a, int b) {\n        assert(0 <= a && a < _n);\n\
-    \        assert(0 <= b && b < _n);\n        int x = leader(a), y = leader(b);\n\
-    \        if (x == y) return x;\n        if (-parent_or_size[x] < -parent_or_size[y])\
+    \ <bits/stdc++.h>\n#line 1 \"Graph/dsu.hpp\"\nstruct dsu {\n    public:\n    dsu()\
+    \ : _n(0) {}\n    dsu(int n) : _n(n), num_component(n), parent_or_size(n, -1)\
+    \ {}\n\n    int merge(int a, int b) {\n        assert(0 <= a && a < _n);\n   \
+    \     assert(0 <= b && b < _n);\n        int x = leader(a), y = leader(b);\n \
+    \       if (x == y) return x;\n        if (-parent_or_size[x] < -parent_or_size[y])\
     \ std::swap(x, y);\n        parent_or_size[x] += parent_or_size[y];\n        parent_or_size[y]\
     \ = x;\n        num_component--;\n        return x;\n    }\n\n    bool same(int\
     \ a, int b) {\n        assert(0 <= a && a < _n);\n        assert(0 <= b && b <\
@@ -58,7 +58,7 @@ data:
   isVerificationFile: true
   path: Test/Aizu Online Judge/DSL/DSL_1_A.test.cpp
   requiredBy: []
-  timestamp: '2023-06-18 12:54:30+09:00'
+  timestamp: '2023-06-18 19:58:57+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: Test/Aizu Online Judge/DSL/DSL_1_A.test.cpp
