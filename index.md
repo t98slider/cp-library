@@ -6,6 +6,11 @@ data:
     - icon: ':warning:'
       path: DataStructure/segtree.hpp
       title: DataStructure/segtree.hpp
+  - name: Graph
+    pages:
+    - icon: ':warning:'
+      path: Graph/dsu.hpp
+      title: Graph/dsu.hpp
   - name: Library/DataStructure
     pages:
     - icon: ':heavy_check_mark:'
