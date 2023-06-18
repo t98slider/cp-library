@@ -1,6 +1,11 @@
 ---
 data:
   libraryCategories:
+  - name: DataStructure
+    pages:
+    - icon: ':warning:'
+      path: DataStructure/segtree.hpp
+      title: DataStructure/segtree.hpp
   - name: Library/DataStructure
     pages:
     - icon: ':heavy_check_mark:'
