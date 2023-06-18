@@ -19,3 +19,6 @@ jobs:
       env:
         GH_PAT: ${{ secrets.GH_PAT }}
       run: oj-verify all
+    
+    - name: Create docs
+      run: oj-verify docs
