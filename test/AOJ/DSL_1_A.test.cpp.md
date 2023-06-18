@@ -17,10 +17,10 @@ data:
     \                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n \
     \ File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py\"\
     , line 260, in _resolve\n    raise BundleErrorAt(path, -1, \"no such header\"\
-    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: Library/DataStructure/UnionFind.hpp:\
+    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: ../../Library/DataStructure/UnionFind.hpp:\
     \ line -1: no such header\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/1/DSL_1_A\"\
-    \n\n#include <bits/stdc++.h>\n#include \"Library/DataStructure/UnionFind.hpp\"\
+    \n\n#include <bits/stdc++.h>\n#include \"../../Library/DataStructure/UnionFind.hpp\"\
     \n\nint main() {\n    std::cin.tie(0);\n    std::ios::sync_with_stdio(false);\n\
     \    int n, q;\n    std::cin >> n >> q;\n    dsu uf(n);\n    while(q--){\n   \
     \     int cmd, u, v;\n        std::cin >> cmd >> u >> v;\n        if(cmd == 0)\
