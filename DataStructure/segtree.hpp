@@ -1,5 +1,3 @@
-#pragma once
-
 template <class S, S (*op)(S, S), S (*e)()> struct segtree {
     public:
     segtree() : segtree(0) {}
