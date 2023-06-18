@@ -65,8 +65,10 @@ data:
   verifiedWith: []
 documentation_of: Library/DataStructure/dsu.hpp
 layout: document
-redirect_from:
-- /library/Library/DataStructure/dsu.hpp
-- /library/Library/DataStructure/dsu.hpp.html
-title: Library/DataStructure/dsu.hpp
+title: Union Find
 ---
+
+## 概要
+
+| 関数名など                | 効果                                          | 時間計算量    |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------- |

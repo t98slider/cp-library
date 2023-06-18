@@ -5,7 +5,7 @@ data:
     pages:
     - icon: ':warning:'
       path: Library/DataStructure/dsu.hpp
-      title: Library/DataStructure/dsu.hpp
+      title: Union Find
   verificationCategories:
   - name: .
     pages:
