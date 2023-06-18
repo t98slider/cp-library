@@ -1,7 +1,10 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: Test/Library Checker/Data Structure/Unionfind.cpp
+    title: Test/Library Checker/Data Structure/Unionfind.cpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: Test/Aizu Online Judge/DSL/DSL_1_A.test.cpp
@@ -62,7 +65,8 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: Graph/dsu.hpp
-  requiredBy: []
+  requiredBy:
+  - Test/Library Checker/Data Structure/Unionfind.cpp
   timestamp: '2023-06-18 12:44:37+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
