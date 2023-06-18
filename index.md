@@ -10,7 +10,7 @@ data:
     pages:
     - icon: ':warning:'
       path: Graph/dsu.hpp
-      title: Graph/dsu.hpp
+      title: Union Find
   - name: Library/DataStructure
     pages:
     - icon: ':heavy_check_mark:'
