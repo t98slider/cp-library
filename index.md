@@ -1,6 +1,11 @@
 ---
 data:
-  libraryCategories: []
+  libraryCategories:
+  - name: Library/DataStructure
+    pages:
+    - icon: ':warning:'
+      path: Library/DataStructure/dsu.hpp
+      title: Library/DataStructure/dsu.hpp
   verificationCategories:
   - name: .
     pages:
