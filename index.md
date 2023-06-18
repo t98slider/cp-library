@@ -5,7 +5,7 @@ data:
     pages:
     - icon: ':warning:'
       path: DataStructure/segtree.hpp
-      title: DataStructure/segtree.hpp
+      title: "\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
   - name: Graph
     pages:
     - icon: ':heavy_check_mark:'
