@@ -11,11 +11,6 @@ data:
     - icon: ':heavy_check_mark:'
       path: Graph/dsu.hpp
       title: Union Find
-  - name: Test/Library Checker/Data Structure
-    pages:
-    - icon: ':warning:'
-      path: Test/Library Checker/Data Structure/Unionfind.cpp
-      title: Test/Library Checker/Data Structure/Unionfind.cpp
   verificationCategories:
   - name: Test/Aizu Online Judge/DSL
     pages:
@@ -25,6 +20,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: Test/Aizu Online Judge/DSL/DSL_2_A.test.cpp
       title: Test/Aizu Online Judge/DSL/DSL_2_A.test.cpp
+  - name: Test/Library Checker/Data Structure
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: Test/Library Checker/Data Structure/Unionfind.test.cpp
+      title: Test/Library Checker/Data Structure/Unionfind.test.cpp
 layout: toppage
 ---
 

@@ -8,12 +8,14 @@ data:
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
+    '*NOT_SPECIAL_COMMENTS*': ''
+    PROBLEM: https://judge.yosupo.jp/problem/unionfind
     links:
     - https://judge.yosupo.jp/problem/unionfind
-  bundledCode: "#line 1 \"Test/Library Checker/Data Structure/Unionfind.cpp\"\n#define\
-    \ PROBLEM \"https://judge.yosupo.jp/problem/unionfind\"\n\n#include <bits/stdc++.h>\n\
+  bundledCode: "#line 1 \"Test/Library Checker/Data Structure/Unionfind.test.cpp\"\
+    \n#define PROBLEM \"https://judge.yosupo.jp/problem/unionfind\"\n\n#include <bits/stdc++.h>\n\
     #line 2 \"Graph/dsu.hpp\"\n\nstruct dsu {\n    public:\n    dsu() : _n(0) {}\n\
     \    dsu(int n) : _n(n), num_component(n), parent_or_size(n, -1) {}\n\n    int\
     \ merge(int a, int b) {\n        assert(0 <= a && a < _n);\n        assert(0 <=\
@@ -38,12 +40,12 @@ data:
     \ v.empty(); }),\n            result.end());\n        return result;\n    }\n\n\
     \    private:\n    int _n, num_component;\n    // root node: -1 * component size\n\
     \    // otherwise: parent\n    std::vector<int> parent_or_size;\n};\n#line 5 \"\
-    Test/Library Checker/Data Structure/Unionfind.cpp\"\n\nint main() {\n    std::cin.tie(0);\n\
-    \    std::ios::sync_with_stdio(false);\n    int n, q;\n    std::cin >> n >> q;\n\
-    \    dsu uf(n);\n    while(q--){\n        int cmd, u, v;\n        std::cin >>\
-    \ cmd >> u >> v;\n        if(cmd == 0) {\n            uf.merge(u, v);\n      \
-    \  } else {\n            std::cout << uf.same(u, v) << '\\n';\n        }\n   \
-    \ }\n}\n"
+    Test/Library Checker/Data Structure/Unionfind.test.cpp\"\n\nint main() {\n   \
+    \ std::cin.tie(0);\n    std::ios::sync_with_stdio(false);\n    int n, q;\n   \
+    \ std::cin >> n >> q;\n    dsu uf(n);\n    while(q--){\n        int cmd, u, v;\n\
+    \        std::cin >> cmd >> u >> v;\n        if(cmd == 0) {\n            uf.merge(u,\
+    \ v);\n        } else {\n            std::cout << uf.same(u, v) << '\\n';\n  \
+    \      }\n    }\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/unionfind\"\n\n#include\
     \ <bits/stdc++.h>\n#include \"../../../Graph/dsu.hpp\"\n\nint main() {\n    std::cin.tie(0);\n\
     \    std::ios::sync_with_stdio(false);\n    int n, q;\n    std::cin >> n >> q;\n\
@@ -53,16 +55,16 @@ data:
     \ }\n}\n"
   dependsOn:
   - Graph/dsu.hpp
-  isVerificationFile: false
-  path: Test/Library Checker/Data Structure/Unionfind.cpp
+  isVerificationFile: true
+  path: Test/Library Checker/Data Structure/Unionfind.test.cpp
   requiredBy: []
-  timestamp: '2023-06-18 16:54:32+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
+  timestamp: '2023-06-18 16:57:14+09:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: Test/Library Checker/Data Structure/Unionfind.cpp
+documentation_of: Test/Library Checker/Data Structure/Unionfind.test.cpp
 layout: document
 redirect_from:
-- /library/Test/Library Checker/Data Structure/Unionfind.cpp
-- /library/Test/Library Checker/Data Structure/Unionfind.cpp.html
-title: Test/Library Checker/Data Structure/Unionfind.cpp
+- /verify/Test/Library Checker/Data Structure/Unionfind.test.cpp
+- /verify/Test/Library Checker/Data Structure/Unionfind.test.cpp.html
+title: Test/Library Checker/Data Structure/Unionfind.test.cpp
 ---

@@ -1,14 +1,14 @@
 ---
 data:
   _extendedDependsOn: []
-  _extendedRequiredBy:
-  - icon: ':warning:'
-    path: Test/Library Checker/Data Structure/Unionfind.cpp
-    title: Test/Library Checker/Data Structure/Unionfind.cpp
+  _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: Test/Aizu Online Judge/DSL/DSL_1_A.test.cpp
     title: Test/Aizu Online Judge/DSL/DSL_1_A.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: Test/Library Checker/Data Structure/Unionfind.test.cpp
+    title: Test/Library Checker/Data Structure/Unionfind.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -65,11 +65,11 @@ data:
   dependsOn: []
   isVerificationFile: false
   path: Graph/dsu.hpp
-  requiredBy:
-  - Test/Library Checker/Data Structure/Unionfind.cpp
+  requiredBy: []
   timestamp: '2023-06-18 12:44:37+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - Test/Library Checker/Data Structure/Unionfind.test.cpp
   - Test/Aizu Online Judge/DSL/DSL_1_A.test.cpp
 documentation_of: Graph/dsu.hpp
 layout: document
