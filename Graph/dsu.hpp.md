@@ -73,7 +73,7 @@ title: Union Find
 ---
 
 ## 概要
-ほぼ AtCoder Library のパクリ。
+ほぼ AtCoder Library パクリ。AtCoder Library に加えて連結成分数の取得ができるようにしてある。
 
 | 関数名など   | 機能        | 計算量    |
 | ------------|----------- | ------------- |
