@@ -4,8 +4,8 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
-    path: Test/Library Checker/Graph/scc.test.cpp
-    title: Test/Library Checker/Graph/scc.test.cpp
+    path: Test/Library Checker/Graph/ StronglyConnectedComponents.test.cpp
+    title: Test/Library Checker/Graph/ StronglyConnectedComponents.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -66,7 +66,7 @@ data:
   timestamp: '2023-06-18 20:06:42+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - Test/Library Checker/Graph/scc.test.cpp
+  - Test/Library Checker/Graph/ StronglyConnectedComponents.test.cpp
 documentation_of: Graph/scc.hpp
 layout: document
 title: "\u5F37\u9023\u7D50\u6210\u5206\u5206\u89E3 (SCC, Strongly Connected Component)"
