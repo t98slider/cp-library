@@ -11,7 +11,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: Graph/dsu.hpp
       title: Union Find
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: Graph/scc.hpp
       title: "\u5F37\u9023\u7D50\u6210\u5206\u5206\u89E3 (SCC, Strongly Connected\
         \ Component)"
@@ -29,6 +29,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: Test/Library Checker/Data Structure/Unionfind.test.cpp
       title: Test/Library Checker/Data Structure/Unionfind.test.cpp
+  - name: Test/Library Checker/Graph
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: Test/Library Checker/Graph/scc.test.cpp
+      title: Test/Library Checker/Graph/scc.test.cpp
 layout: toppage
 ---
 
