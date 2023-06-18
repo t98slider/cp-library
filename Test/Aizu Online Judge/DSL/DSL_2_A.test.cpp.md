@@ -16,8 +16,8 @@ data:
     - https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/1/DSL_2_A
   bundledCode: "#line 1 \"Test/Aizu Online Judge/DSL/DSL_2_A.test.cpp\"\n#define PROBLEM\
     \ \"https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/1/DSL_2_A\"\n\n#include\
-    \ <bits/stdc++.h>\n#line 2 \"DataStructure/segtree.hpp\"\n\ntemplate <class S,\
-    \ S (*op)(S, S), S (*e)()> struct segtree {\n    public:\n    segtree() : segtree(0)\
+    \ <bits/stdc++.h>\n#line 1 \"DataStructure/segtree.hpp\"\ntemplate <class S, S\
+    \ (*op)(S, S), S (*e)()> struct segtree {\n    public:\n    segtree() : segtree(0)\
     \ {}\n    segtree(int n) : segtree(std::vector<S>(n, e())) {}\n    segtree(const\
     \ std::vector<S>& v) : _n(int(v.size())) {\n        log = ceil_pow2(_n);\n   \
     \     size = 1 << log;\n        d = std::vector<S>(2 * size, e());\n        for\
@@ -77,7 +77,7 @@ data:
   isVerificationFile: true
   path: Test/Aizu Online Judge/DSL/DSL_2_A.test.cpp
   requiredBy: []
-  timestamp: '2023-06-18 16:34:03+09:00'
+  timestamp: '2023-06-18 19:57:55+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: Test/Aizu Online Judge/DSL/DSL_2_A.test.cpp

@@ -11,7 +11,7 @@ data:
   _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
-  bundledCode: "#line 2 \"DataStructure/segtree.hpp\"\n\ntemplate <class S, S (*op)(S,\
+  bundledCode: "#line 1 \"DataStructure/segtree.hpp\"\ntemplate <class S, S (*op)(S,\
     \ S), S (*e)()> struct segtree {\n    public:\n    segtree() : segtree(0) {}\n\
     \    segtree(int n) : segtree(std::vector<S>(n, e())) {}\n    segtree(const std::vector<S>&\
     \ v) : _n(int(v.size())) {\n        log = ceil_pow2(_n);\n        size = 1 <<\
@@ -52,8 +52,8 @@ data:
     \       int x = 0;\n        while ((1U << x) < (unsigned int)(n)) x++;\n     \
     \   return x;\n    }\n    void update(int k) { d[k] = op(d[2 * k], d[2 * k + 1]);\
     \ }\n};\n"
-  code: "#pragma once\n\ntemplate <class S, S (*op)(S, S), S (*e)()> struct segtree\
-    \ {\n    public:\n    segtree() : segtree(0) {}\n    segtree(int n) : segtree(std::vector<S>(n,\
+  code: "template <class S, S (*op)(S, S), S (*e)()> struct segtree {\n    public:\n\
+    \    segtree() : segtree(0) {}\n    segtree(int n) : segtree(std::vector<S>(n,\
     \ e())) {}\n    segtree(const std::vector<S>& v) : _n(int(v.size())) {\n     \
     \   log = ceil_pow2(_n);\n        size = 1 << log;\n        d = std::vector<S>(2\
     \ * size, e());\n        for (int i = 0; i < _n; i++) d[size + i] = v[i];\n  \
@@ -96,7 +96,7 @@ data:
   isVerificationFile: false
   path: DataStructure/segtree.hpp
   requiredBy: []
-  timestamp: '2023-06-18 12:43:40+09:00'
+  timestamp: '2023-06-18 19:57:55+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - Test/Aizu Online Judge/DSL/DSL_2_A.test.cpp
