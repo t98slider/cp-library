@@ -3,7 +3,7 @@ data:
   libraryCategories:
   - name: Library/DataStructure
     pages:
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: Library/DataStructure/dsu.hpp
       title: Union Find
   verificationCategories:
@@ -14,7 +14,7 @@ data:
       title: example.test.cpp
   - name: test/AOJ
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/AOJ/DSL_1_A.test.cpp
       title: test/AOJ/DSL_1_A.test.cpp
 layout: toppage
