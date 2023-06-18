@@ -17,15 +17,15 @@ data:
     \                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n \
     \ File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/languages/cplusplus_bundle.py\"\
     , line 260, in _resolve\n    raise BundleErrorAt(path, -1, \"no such header\"\
-    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: ../../Library/DataStructure/UnionFind.hpp:\
+    )\nonlinejudge_verify.languages.cplusplus_bundle.BundleErrorAt: DataStructure/dsu.hpp:\
     \ line -1: no such header\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/1/DSL_1_A\"\
-    \n\n#include <bits/stdc++.h>\n#include \"../../Library/DataStructure/UnionFind.hpp\"\
-    \n\nint main() {\n    std::cin.tie(0);\n    std::ios::sync_with_stdio(false);\n\
-    \    int n, q;\n    std::cin >> n >> q;\n    dsu uf(n);\n    while(q--){\n   \
-    \     int cmd, u, v;\n        std::cin >> cmd >> u >> v;\n        if(cmd == 0)\
-    \ {\n            uf.merge(u, v);\n        } else {\n            std::cout << uf.same(u,\
-    \ v) << '\\n';\n        }\n    }\n}\n"
+    \n\n#include <bits/stdc++.h>\n#include \"DataStructure/dsu.hpp\"\n\nint main()\
+    \ {\n    std::cin.tie(0);\n    std::ios::sync_with_stdio(false);\n    int n, q;\n\
+    \    std::cin >> n >> q;\n    dsu uf(n);\n    while(q--){\n        int cmd, u,\
+    \ v;\n        std::cin >> cmd >> u >> v;\n        if(cmd == 0) {\n           \
+    \ uf.merge(u, v);\n        } else {\n            std::cout << uf.same(u, v) <<\
+    \ '\\n';\n        }\n    }\n}\n"
   dependsOn: []
   isVerificationFile: true
   path: test/AOJ/DSL_1_A.test.cpp
