@@ -1,6 +1,11 @@
 ---
 data:
-  libraryCategories: []
+  libraryCategories:
+  - name: datastructure
+    pages:
+    - icon: ':warning:'
+      path: datastructure/a.cpp
+      title: datastructure/a.cpp
   verificationCategories:
   - name: .
     pages:
