@@ -9,4 +9,4 @@ data:
       title: example.test.cpp
 layout: toppage
 ---
-aaa
+使い方よく分からん...
