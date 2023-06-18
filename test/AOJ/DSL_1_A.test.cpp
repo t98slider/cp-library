@@ -1,7 +1,7 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/1/DSL_1_A"
 
 #include <bits/stdc++.h>
-#include "Library/DataStructure/UnionFind.hpp"
+#include "../../Library/DataStructure/UnionFind.hpp"
 
 int main() {
     std::cin.tie(0);
