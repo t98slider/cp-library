@@ -3,12 +3,10 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _isVerificationFailed: true
   _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
-  attributes:
-    links:
-    - https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/1/DSL_1_A
+  _verificationStatusIcon: ':x:'
+  attributes: {}
   bundledCode: "Traceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.11.4/x64/lib/python3.11/site-packages/onlinejudge_verify/documentation/build.py\"\
     , line 71, in _render_source_code_stat\n    bundled_code = language.bundle(stat.path,\
     \ basedir=basedir, options={'include_paths': [basedir]}).decode()\n          \
@@ -29,16 +27,16 @@ data:
     \ v);\n        } else {\n            std::cout << uf.same(u, v) << '\\n';\n  \
     \      }\n    }\n}\n"
   dependsOn: []
-  isVerificationFile: false
-  path: Test/Aizu Online Judge/DSL/DSL_1_A.cpp
+  isVerificationFile: true
+  path: Test/Aizu Online Judge/DSL/DSL_1_A.test.cpp
   requiredBy: []
   timestamp: '1970-01-01 00:00:00+00:00'
-  verificationStatus: LIBRARY_NO_TESTS
+  verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
-documentation_of: Test/Aizu Online Judge/DSL/DSL_1_A.cpp
+documentation_of: Test/Aizu Online Judge/DSL/DSL_1_A.test.cpp
 layout: document
 redirect_from:
-- /library/Test/Aizu Online Judge/DSL/DSL_1_A.cpp
-- /library/Test/Aizu Online Judge/DSL/DSL_1_A.cpp.html
-title: Test/Aizu Online Judge/DSL/DSL_1_A.cpp
+- /verify/Test/Aizu Online Judge/DSL/DSL_1_A.test.cpp
+- /verify/Test/Aizu Online Judge/DSL/DSL_1_A.test.cpp.html
+title: Test/Aizu Online Judge/DSL/DSL_1_A.test.cpp
 ---
