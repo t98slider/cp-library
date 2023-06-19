@@ -10,8 +10,8 @@ data:
     path: Test/Aizu Online Judge/DSL/DSL_1_A.test.cpp
     title: Test/Aizu Online Judge/DSL/DSL_1_A.test.cpp
   - icon: ':heavy_check_mark:'
-    path: Test/Library Checker/Data Structure/Unionfind.test.cpp
-    title: Test/Library Checker/Data Structure/Unionfind.test.cpp
+    path: Test/Library Checker/Data Structure/unionfind.test.cpp
+    title: Test/Library Checker/Data Structure/unionfind.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -71,7 +71,7 @@ data:
   timestamp: '2023-06-18 19:58:57+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - Test/Library Checker/Data Structure/Unionfind.test.cpp
+  - Test/Library Checker/Data Structure/unionfind.test.cpp
   - Test/Aizu Online Judge/ALDS1/ALDS1_11_D.test.cpp
   - Test/Aizu Online Judge/DSL/DSL_1_A.test.cpp
 documentation_of: Graph/dsu.hpp

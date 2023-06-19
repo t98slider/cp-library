@@ -14,7 +14,7 @@ data:
     PROBLEM: https://judge.yosupo.jp/problem/unionfind
     links:
     - https://judge.yosupo.jp/problem/unionfind
-  bundledCode: "#line 1 \"Test/Library Checker/Data Structure/Unionfind.test.cpp\"\
+  bundledCode: "#line 1 \"Test/Library Checker/Data Structure/unionfind.test.cpp\"\
     \n#define PROBLEM \"https://judge.yosupo.jp/problem/unionfind\"\n\n#include <bits/stdc++.h>\n\
     #line 1 \"Graph/dsu.hpp\"\nstruct dsu {\n    public:\n    dsu() : _n(0) {}\n \
     \   dsu(int n) : _n(n), num_component(n), parent_or_size(n, -1) {}\n\n    int\
@@ -40,7 +40,7 @@ data:
     \ v.empty(); }),\n            result.end());\n        return result;\n    }\n\n\
     \    private:\n    int _n, num_component;\n    // root node: -1 * component size\n\
     \    // otherwise: parent\n    std::vector<int> parent_or_size;\n};\n#line 5 \"\
-    Test/Library Checker/Data Structure/Unionfind.test.cpp\"\n\nint main() {\n   \
+    Test/Library Checker/Data Structure/unionfind.test.cpp\"\n\nint main() {\n   \
     \ std::cin.tie(0);\n    std::ios::sync_with_stdio(false);\n    int n, q;\n   \
     \ std::cin >> n >> q;\n    dsu uf(n);\n    while(q--){\n        int cmd, u, v;\n\
     \        std::cin >> cmd >> u >> v;\n        if(cmd == 0) {\n            uf.merge(u,\
@@ -56,15 +56,15 @@ data:
   dependsOn:
   - Graph/dsu.hpp
   isVerificationFile: true
-  path: Test/Library Checker/Data Structure/Unionfind.test.cpp
+  path: Test/Library Checker/Data Structure/unionfind.test.cpp
   requiredBy: []
-  timestamp: '2023-06-18 19:58:57+09:00'
+  timestamp: '2023-06-20 01:39:07+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: Test/Library Checker/Data Structure/Unionfind.test.cpp
+documentation_of: Test/Library Checker/Data Structure/unionfind.test.cpp
 layout: document
 redirect_from:
-- /verify/Test/Library Checker/Data Structure/Unionfind.test.cpp
-- /verify/Test/Library Checker/Data Structure/Unionfind.test.cpp.html
-title: Test/Library Checker/Data Structure/Unionfind.test.cpp
+- /verify/Test/Library Checker/Data Structure/unionfind.test.cpp
+- /verify/Test/Library Checker/Data Structure/unionfind.test.cpp.html
+title: Test/Library Checker/Data Structure/unionfind.test.cpp
 ---

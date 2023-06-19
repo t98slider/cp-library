@@ -38,11 +38,11 @@ data:
   - name: Test/Library Checker/Data Structure
     pages:
     - icon: ':heavy_check_mark:'
-      path: Test/Library Checker/Data Structure/Unionfind.test.cpp
-      title: Test/Library Checker/Data Structure/Unionfind.test.cpp
-    - icon: ':heavy_check_mark:'
       path: Test/Library Checker/Data Structure/point_add_range_sum.test.cpp
       title: Test/Library Checker/Data Structure/point_add_range_sum.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: Test/Library Checker/Data Structure/unionfind.test.cpp
+      title: Test/Library Checker/Data Structure/unionfind.test.cpp
   - name: Test/Library Checker/Graph
     pages:
     - icon: ':heavy_check_mark:'
