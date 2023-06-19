@@ -3,7 +3,7 @@ data:
   libraryCategories:
   - name: DataStructure
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: DataStructure/fenwick_tree.hpp
       title: DataStructure/fenwick_tree.hpp
     - icon: ':heavy_check_mark:'
@@ -21,7 +21,7 @@ data:
   verificationCategories:
   - name: Test/Aizu Online Judge/ALDS1
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Test/Aizu Online Judge/ALDS1/ALDS1_5_D.test.cpp
       title: Test/Aizu Online Judge/ALDS1/ALDS1_5_D.test.cpp
   - name: Test/Aizu Online Judge/DSL
