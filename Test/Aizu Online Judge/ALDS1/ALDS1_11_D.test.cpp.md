@@ -40,14 +40,14 @@ data:
     \ v.empty(); }),\n            result.end());\n        return result;\n    }\n\n\
     \    private:\n    int _n, num_component;\n    // root node: -1 * component size\n\
     \    // otherwise: parent\n    std::vector<int> parent_or_size;\n};\n#line 5 \"\
-    Test/Aizu Online Judge/ALDS1/ALDS1_11_D.test.cpp\"\n\nusing namespace std;\n\n\
-    int main() {\n    cin.tie(0);\n    ios::sync_with_stdio(false);\n    int n, m,\
-    \ q, u, v;\n    cin >> n >> m;\n    dsu uf(n);\n    while(m--){\n        cin >>\
-    \ u >> v;\n        uf.merge(u, v);\n    }\n    cin >> q;\n    while(q--){\n  \
-    \      cin >> u >> v;\n        cout << (uf.same(u, v) ? \"yes\" : \"no\") << '\\\
+    Test/Aizu Online Judge/ALDS1/ALDS1_11_D.test.cpp\"\nusing namespace std;\n\nint\
+    \ main() {\n    cin.tie(0);\n    ios::sync_with_stdio(false);\n    int n, m, q,\
+    \ u, v;\n    cin >> n >> m;\n    dsu uf(n);\n    while(m--){\n        cin >> u\
+    \ >> v;\n        uf.merge(u, v);\n    }\n    cin >> q;\n    while(q--){\n    \
+    \    cin >> u >> v;\n        cout << (uf.same(u, v) ? \"yes\" : \"no\") << '\\\
     n';\n    }\n}\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/5/ALDS1_11_D\"\
-    \n\n#include <bits/stdc++.h>\n#include \"../../../Graph/dsu.hpp\"\n\nusing namespace\
+    \n\n#include <bits/stdc++.h>\n#include \"../../../Graph/dsu.hpp\"\nusing namespace\
     \ std;\n\nint main() {\n    cin.tie(0);\n    ios::sync_with_stdio(false);\n  \
     \  int n, m, q, u, v;\n    cin >> n >> m;\n    dsu uf(n);\n    while(m--){\n \
     \       cin >> u >> v;\n        uf.merge(u, v);\n    }\n    cin >> q;\n    while(q--){\n\
@@ -58,7 +58,7 @@ data:
   isVerificationFile: true
   path: Test/Aizu Online Judge/ALDS1/ALDS1_11_D.test.cpp
   requiredBy: []
-  timestamp: '2023-06-20 01:13:08+09:00'
+  timestamp: '2023-06-20 01:19:19+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: Test/Aizu Online Judge/ALDS1/ALDS1_11_D.test.cpp
