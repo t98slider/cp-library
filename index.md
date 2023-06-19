@@ -5,7 +5,7 @@ data:
     pages:
     - icon: ':heavy_check_mark:'
       path: DataStructure/fenwick_tree.hpp
-      title: DataStructure/fenwick_tree.hpp
+      title: "\u30D5\u30A7\u30CB\u30C3\u30AF\u6728 (BIT, Binary Indexed Tree)"
     - icon: ':heavy_check_mark:'
       path: DataStructure/segtree.hpp
       title: "\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
