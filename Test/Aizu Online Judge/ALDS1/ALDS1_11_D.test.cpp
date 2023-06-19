@@ -2,7 +2,6 @@
 
 #include <bits/stdc++.h>
 #include "../../../Graph/dsu.hpp"
-
 using namespace std;
 
 int main() {
