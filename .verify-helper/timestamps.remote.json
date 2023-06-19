@@ -4,5 +4,6 @@
 "Test/Aizu Online Judge/DSL/DSL_1_A.test.cpp": "2023-06-18 19:58:57 +0900",
 "Test/Aizu Online Judge/DSL/DSL_2_A.test.cpp": "2023-06-18 19:57:55 +0900",
 "Test/Library Checker/Data Structure/Unionfind.test.cpp": "2023-06-18 19:58:57 +0900",
+"Test/Library Checker/Data Structure/point_add_range_sum.test.cpp": "2023-06-20 01:36:46 +0900",
 "Test/Library Checker/Graph/ StronglyConnectedComponents.test.cpp": "2023-06-18 20:26:57 +0900"
 }
