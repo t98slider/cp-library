@@ -3,7 +3,7 @@ data:
   libraryCategories:
   - name: DataStructure
     pages:
-    - icon: ':warning:'
+    - icon: ':x:'
       path: DataStructure/fenwick_tree.hpp
       title: DataStructure/fenwick_tree.hpp
     - icon: ':heavy_check_mark:'
