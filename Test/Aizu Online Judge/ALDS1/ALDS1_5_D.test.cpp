@@ -42,12 +42,12 @@ int main(){
     int n;
     std::cin >> n;
     std::vector<int> a(n), ca;
-    for(auto &&v : a) cin >> v;
+    for(auto &&v : a) std::cin >> v;
     ca = a;
     sort(ca.begin(), ca.end());
-    ca.erase(unique(ca.begin(), ca.end()), ca.end());
+    ca.erase(std::unique(ca.begin(), ca.end()), ca.end());
     int m = ca.size();
-    fewnick_tree<int> fw(m);
+    fenwick_tree<int> fw(m);
     long long ans = 0;
     for(auto &&v : a){
         v = std::distance(ca.begin(), std::lower_bound(ca.begin(), ca.end(), v));
