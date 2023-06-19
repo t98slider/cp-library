@@ -35,9 +35,9 @@ data:
     \    int _n;\n    std::vector<U> data;\n\n    U sum(int r) {\n        U s = 0;\n\
     \        while (r > 0) {\n            s += data[r - 1];\n            r -= r &\
     \ -r;\n        }\n        return s;\n    }\n};\n\nint main(){\n    int n;\n  \
-    \  std::cin >> n;\n    std::vector<int> a(n), ca;\n    for(auto &&v : a) cin >>\
-    \ v;\n    ca = a;\n    sort(ca.begin(), ca.end());\n    ca.erase(unique(ca.begin(),\
-    \ ca.end()), ca.end());\n    int m = ca.size();\n    fewnick_tree<int> fw(m);\n\
+    \  std::cin >> n;\n    std::vector<int> a(n), ca;\n    for(auto &&v : a) std::cin\
+    \ >> v;\n    ca = a;\n    sort(ca.begin(), ca.end());\n    ca.erase(std::unique(ca.begin(),\
+    \ ca.end()), ca.end());\n    int m = ca.size();\n    fenwick_tree<int> fw(m);\n\
     \    long long ans = 0;\n    for(auto &&v : a){\n        v = std::distance(ca.begin(),\
     \ std::lower_bound(ca.begin(), ca.end(), v));\n        ans += fw.sum(v + 1, m);\n\
     \        fw.add(v, 1);\n    }\n    std::cout << ans << '\\n';\n}\n"
@@ -52,9 +52,9 @@ data:
     \    int _n;\n    std::vector<U> data;\n\n    U sum(int r) {\n        U s = 0;\n\
     \        while (r > 0) {\n            s += data[r - 1];\n            r -= r &\
     \ -r;\n        }\n        return s;\n    }\n};\n\nint main(){\n    int n;\n  \
-    \  std::cin >> n;\n    std::vector<int> a(n), ca;\n    for(auto &&v : a) cin >>\
-    \ v;\n    ca = a;\n    sort(ca.begin(), ca.end());\n    ca.erase(unique(ca.begin(),\
-    \ ca.end()), ca.end());\n    int m = ca.size();\n    fewnick_tree<int> fw(m);\n\
+    \  std::cin >> n;\n    std::vector<int> a(n), ca;\n    for(auto &&v : a) std::cin\
+    \ >> v;\n    ca = a;\n    sort(ca.begin(), ca.end());\n    ca.erase(std::unique(ca.begin(),\
+    \ ca.end()), ca.end());\n    int m = ca.size();\n    fenwick_tree<int> fw(m);\n\
     \    long long ans = 0;\n    for(auto &&v : a){\n        v = std::distance(ca.begin(),\
     \ std::lower_bound(ca.begin(), ca.end(), v));\n        ans += fw.sum(v + 1, m);\n\
     \        fw.add(v, 1);\n    }\n    std::cout << ans << '\\n';\n}\n"
@@ -63,7 +63,7 @@ data:
   isVerificationFile: true
   path: Test/Aizu Online Judge/ALDS1/ALDS1_5_D.test.cpp
   requiredBy: []
-  timestamp: '2023-06-19 14:46:32+09:00'
+  timestamp: '2023-06-19 14:49:02+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: Test/Aizu Online Judge/ALDS1/ALDS1_5_D.test.cpp
