@@ -3,6 +3,9 @@ data:
   libraryCategories:
   - name: DataStructure
     pages:
+    - icon: ':warning:'
+      path: DataStructure/fenwick_tree.hpp
+      title: DataStructure/fenwick_tree.hpp
     - icon: ':heavy_check_mark:'
       path: DataStructure/segtree.hpp
       title: "\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
