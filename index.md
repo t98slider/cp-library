@@ -46,8 +46,8 @@ data:
   - name: Test/Library Checker/Graph
     pages:
     - icon: ':heavy_check_mark:'
-      path: Test/Library Checker/Graph/ StronglyConnectedComponents.test.cpp
-      title: Test/Library Checker/Graph/ StronglyConnectedComponents.test.cpp
+      path: Test/Library Checker/Graph/scc.test.cpp
+      title: Test/Library Checker/Graph/scc.test.cpp
 layout: toppage
 ---
 
