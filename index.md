@@ -22,8 +22,11 @@ data:
   - name: Test/Aizu Online Judge/ALDS1
     pages:
     - icon: ':heavy_check_mark:'
-      path: Test/Aizu Online Judge/ALDS1/ALDS1_5_D.test.cpp
-      title: Test/Aizu Online Judge/ALDS1/ALDS1_5_D.test.cpp
+      path: Test/Aizu Online Judge/ALDS1/ALDS1_05_D.test.cpp
+      title: Test/Aizu Online Judge/ALDS1/ALDS1_05_D.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: Test/Aizu Online Judge/ALDS1/ALDS1_11_D.test.cpp
+      title: Test/Aizu Online Judge/ALDS1/ALDS1_11_D.test.cpp
   - name: Test/Aizu Online Judge/DSL
     pages:
     - icon: ':heavy_check_mark:'

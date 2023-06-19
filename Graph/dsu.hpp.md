@@ -4,6 +4,9 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
+    path: Test/Aizu Online Judge/ALDS1/ALDS1_11_D.test.cpp
+    title: Test/Aizu Online Judge/ALDS1/ALDS1_11_D.test.cpp
+  - icon: ':heavy_check_mark:'
     path: Test/Aizu Online Judge/DSL/DSL_1_A.test.cpp
     title: Test/Aizu Online Judge/DSL/DSL_1_A.test.cpp
   - icon: ':heavy_check_mark:'
@@ -69,6 +72,7 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - Test/Library Checker/Data Structure/Unionfind.test.cpp
+  - Test/Aizu Online Judge/ALDS1/ALDS1_11_D.test.cpp
   - Test/Aizu Online Judge/DSL/DSL_1_A.test.cpp
 documentation_of: Graph/dsu.hpp
 layout: document

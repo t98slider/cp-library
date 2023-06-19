@@ -4,8 +4,8 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
-    path: Test/Aizu Online Judge/ALDS1/ALDS1_5_D.test.cpp
-    title: Test/Aizu Online Judge/ALDS1/ALDS1_5_D.test.cpp
+    path: Test/Aizu Online Judge/ALDS1/ALDS1_05_D.test.cpp
+    title: Test/Aizu Online Judge/ALDS1/ALDS1_05_D.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -37,7 +37,7 @@ data:
   timestamp: '2023-06-19 14:35:10+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - Test/Aizu Online Judge/ALDS1/ALDS1_5_D.test.cpp
+  - Test/Aizu Online Judge/ALDS1/ALDS1_05_D.test.cpp
 documentation_of: DataStructure/fenwick_tree.hpp
 layout: document
 redirect_from:
