@@ -4,11 +4,11 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
-  _pathExtension: cpp
+  _pathExtension: hpp
   _verificationStatusIcon: ':warning:'
   attributes:
     links: []
-  bundledCode: "#line 1 \"DataStructure/CumulativeSum2D_imos.cpp\"\ntemplate <class\
+  bundledCode: "#line 1 \"DataStructure/CumulativeSum2D_imos.hpp\"\ntemplate <class\
     \ T> struct imos2D{\n    int h, w;\n    std::vector<std::vector<T>> dat;\n   \
     \ imos2D(int H, int W) : h(H), w(W), dat(H + 1, std::vector<T>(W + 1, 0)) {}\n\
     \    void add(int ly, int lx, int ry, int rx, T v){\n        assert(0 <= ly &&\
@@ -37,15 +37,15 @@ data:
     \     assert(0 <= y && y < h);\n        return dat[y];\n    }\n};\n"
   dependsOn: []
   isVerificationFile: false
-  path: DataStructure/CumulativeSum2D_imos.cpp
+  path: DataStructure/CumulativeSum2D_imos.hpp
   requiredBy: []
-  timestamp: '2023-06-21 20:34:50+09:00'
+  timestamp: '2023-06-21 20:38:35+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: DataStructure/CumulativeSum2D_imos.cpp
+documentation_of: DataStructure/CumulativeSum2D_imos.hpp
 layout: document
 redirect_from:
-- /library/DataStructure/CumulativeSum2D_imos.cpp
-- /library/DataStructure/CumulativeSum2D_imos.cpp.html
-title: DataStructure/CumulativeSum2D_imos.cpp
+- /library/DataStructure/CumulativeSum2D_imos.hpp
+- /library/DataStructure/CumulativeSum2D_imos.hpp.html
+title: DataStructure/CumulativeSum2D_imos.hpp
 ---
