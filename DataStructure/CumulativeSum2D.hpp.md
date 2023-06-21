@@ -24,7 +24,7 @@ data:
     \ y++) {\n            for(int x = 1; x <= w; x++) {\n                dat[y][x]\
     \ += dat[y][x - 1] + dat[y - 1][x] - dat[y - 1][x - 1];\n            }\n     \
     \   }\n    }\n    T query(int ly, int lx, int ry, int rx){\n        assert(0 <=\
-    \ ly && ly <= ry && ry <= h);\n        assert(0 <= lx && lx <= rx && rx <= h);\n\
+    \ ly && ly <= ry && ry <= h);\n        assert(0 <= lx && lx <= rx && rx <= w);\n\
     \        return dat[ry][rx] - dat[ly][rx] - dat[ry][lx] + dat[ly][lx];\n    }\n\
     };\n"
   code: "template <class T> struct CumulativeSum2D{\n    int h, w;\n    std::vector<std::vector<T>>\
@@ -40,13 +40,13 @@ data:
     \   dat[y][x] += dat[y][x - 1] + dat[y - 1][x] - dat[y - 1][x - 1];\n        \
     \    }\n        }\n    }\n    T query(int ly, int lx, int ry, int rx){\n     \
     \   assert(0 <= ly && ly <= ry && ry <= h);\n        assert(0 <= lx && lx <= rx\
-    \ && rx <= h);\n        return dat[ry][rx] - dat[ly][rx] - dat[ry][lx] + dat[ly][lx];\n\
+    \ && rx <= w);\n        return dat[ry][rx] - dat[ly][rx] - dat[ry][lx] + dat[ly][lx];\n\
     \    }\n};\n"
   dependsOn: []
   isVerificationFile: false
   path: DataStructure/CumulativeSum2D.hpp
   requiredBy: []
-  timestamp: '2023-06-21 20:32:59+09:00'
+  timestamp: '2023-06-22 02:51:49+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - Test/yukicoder/yuki0755.test.cpp
