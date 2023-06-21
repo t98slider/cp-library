@@ -6,6 +6,9 @@ data:
     - icon: ':warning:'
       path: DataStructure/CumulativeSum2D.hpp
       title: DataStructure/CumulativeSum2D.hpp
+    - icon: ':warning:'
+      path: DataStructure/CumulativeSum2D_imos.cpp
+      title: DataStructure/CumulativeSum2D_imos.cpp
     - icon: ':heavy_check_mark:'
       path: DataStructure/fenwick_tree.hpp
       title: "\u30D5\u30A7\u30CB\u30C3\u30AF\u6728 (BIT, Binary Indexed Tree)"
