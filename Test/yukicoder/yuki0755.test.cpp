@@ -2,7 +2,7 @@
 
 #include <bits/stdc++.h>
 #include "../../DataStructure/CumulativeSum2D.hpp"
-#include "../../DataStructure/CumulativeSum2D_imos.hpp.hpp"
+#include "../../DataStructure/CumulativeSum2D_imos.hpp"
 
 using namespace std;
 using ll = long long;
