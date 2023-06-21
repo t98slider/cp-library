@@ -3,10 +3,10 @@ data:
   libraryCategories:
   - name: DataStructure
     pages:
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: DataStructure/CumulativeSum2D.hpp
       title: DataStructure/CumulativeSum2D.hpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: DataStructure/CumulativeSum2D_imos.hpp
       title: DataStructure/CumulativeSum2D_imos.hpp
     - icon: ':heavy_check_mark:'
@@ -67,7 +67,7 @@ data:
       title: Test/Library Checker/Graph/scc.test.cpp
   - name: Test/yukicoder
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: Test/yukicoder/yuki0755.test.cpp
       title: Test/yukicoder/yuki0755.test.cpp
 layout: toppage
