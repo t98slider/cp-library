@@ -24,7 +24,7 @@ template <class T> struct CumulativeSum2D{
     }
     T query(int ly, int lx, int ry, int rx){
         assert(0 <= ly && ly <= ry && ry <= h);
-        assert(0 <= lx && lx <= rx && rx <= h);
+        assert(0 <= lx && lx <= rx && rx <= w);
         return dat[ry][rx] - dat[ly][rx] - dat[ry][lx] + dat[ly][lx];
     }
 };
