@@ -65,6 +65,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: Test/Library Checker/Graph/scc.test.cpp
       title: Test/Library Checker/Graph/scc.test.cpp
+  - name: Test/yukicoder
+    pages:
+    - icon: ':x:'
+      path: Test/yukicoder/yuki0755.test.cpp
+      title: Test/yukicoder/yuki0755.test.cpp
 layout: toppage
 ---
 
