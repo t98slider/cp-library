@@ -64,20 +64,19 @@ data:
     \      if(cmd == 0) {\n            seg.set(x, y);\n        } else {\n        \
     \    std::cout << seg.prod(x, ++y) << '\\n';\n        }\n    }\n}\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/1/DSL_2_A\"\
-    \n\n#include <bits/stdc++.h>\n#include \"../../../DataStructure/segtree.hpp\"\n\
-    \nint op(int lhs, int rhs) {\n    return std::min(lhs, rhs);\n}\n\nint e(){\n\
-    \    return std::numeric_limits<int>::max();\n}\n\nint main() {\n    std::cin.tie(0);\n\
-    \    std::ios::sync_with_stdio(false);\n    int n, q;\n    std::cin >> n >> q;\n\
-    \    segtree<int, op, e> seg(n);\n    while(q--){\n        int cmd, x, y;\n  \
-    \      std::cin >> cmd >> x >> y;\n        if(cmd == 0) {\n            seg.set(x,\
-    \ y);\n        } else {\n            std::cout << seg.prod(x, ++y) << '\\n';\n\
-    \        }\n    }\n}\n"
+    \n\n#include <bits/stdc++.h>\n#include \"DataStructure/segtree.hpp\"\n\nint op(int\
+    \ lhs, int rhs) {\n    return std::min(lhs, rhs);\n}\n\nint e(){\n    return std::numeric_limits<int>::max();\n\
+    }\n\nint main() {\n    std::cin.tie(0);\n    std::ios::sync_with_stdio(false);\n\
+    \    int n, q;\n    std::cin >> n >> q;\n    segtree<int, op, e> seg(n);\n   \
+    \ while(q--){\n        int cmd, x, y;\n        std::cin >> cmd >> x >> y;\n  \
+    \      if(cmd == 0) {\n            seg.set(x, y);\n        } else {\n        \
+    \    std::cout << seg.prod(x, ++y) << '\\n';\n        }\n    }\n}\n"
   dependsOn:
   - DataStructure/segtree.hpp
   isVerificationFile: true
   path: Test/Aizu Online Judge/DSL/DSL_2_A.test.cpp
   requiredBy: []
-  timestamp: '2023-06-18 19:57:55+09:00'
+  timestamp: '2023-06-22 23:13:22+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: Test/Aizu Online Judge/DSL/DSL_2_A.test.cpp
