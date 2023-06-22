@@ -47,18 +47,18 @@ data:
     \  } else {\n            std::cout << uf.same(u, v) << '\\n';\n        }\n   \
     \ }\n}\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/1/DSL_1_A\"\
-    \n\n#include <bits/stdc++.h>\n#include \"../../../Graph/dsu.hpp\"\n\nint main()\
-    \ {\n    std::cin.tie(0);\n    std::ios::sync_with_stdio(false);\n    int n, q;\n\
-    \    std::cin >> n >> q;\n    dsu uf(n);\n    while(q--){\n        int cmd, u,\
-    \ v;\n        std::cin >> cmd >> u >> v;\n        if(cmd == 0) {\n           \
-    \ uf.merge(u, v);\n        } else {\n            std::cout << uf.same(u, v) <<\
-    \ '\\n';\n        }\n    }\n}\n"
+    \n\n#include <bits/stdc++.h>\n#include \"Graph/dsu.hpp\"\n\nint main() {\n   \
+    \ std::cin.tie(0);\n    std::ios::sync_with_stdio(false);\n    int n, q;\n   \
+    \ std::cin >> n >> q;\n    dsu uf(n);\n    while(q--){\n        int cmd, u, v;\n\
+    \        std::cin >> cmd >> u >> v;\n        if(cmd == 0) {\n            uf.merge(u,\
+    \ v);\n        } else {\n            std::cout << uf.same(u, v) << '\\n';\n  \
+    \      }\n    }\n}\n"
   dependsOn:
   - Graph/dsu.hpp
   isVerificationFile: true
   path: Test/Aizu Online Judge/DSL/DSL_1_A.test.cpp
   requiredBy: []
-  timestamp: '2023-06-18 19:58:57+09:00'
+  timestamp: '2023-06-22 23:12:20+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: Test/Aizu Online Judge/DSL/DSL_1_A.test.cpp
