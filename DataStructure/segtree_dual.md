@@ -9,9 +9,9 @@ documentation_of: ./segtree_dual.hpp
 実装は AtCoder Library の遅延セグ木から遅延評価のための配列 `lazy` だけを残したようなものになっている。<br><br>
 宣言を簡易的にするために、`mapping` と `composition` 、モノイドの型 `S` と写像の型 `F` を同じものとなるように設計しているため、異なるものが欲しい場合は遅延セグ木を使う。<br><br>
 以下の3つを宣言する必要がある。
-- `S` : 写像の型 </li>
-- `S mapping(S after, S before)` : `before` に `after` を作用させる関数。(合成写像と兼用) </li>
-- `S id()` : 恒等写像。 `mapping(id(), f) = mapping(f, id()) = f` が満たされるようにする</li>
+- `S` : 写像の型 
+- `S mapping(S after, S before)` : `before` に `after` を作用させる関数。(合成写像と兼用) 
+- `S id()` : 恒等写像。 `mapping(id(), f) = mapping(f, id()) = f` が満たされるようにする
 
 |関数名など|機能|計算量|
 |---------|----|-----|
