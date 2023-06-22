@@ -69,8 +69,8 @@ data:
     \        rhs = mint{(is >> tmp, tmp)};\n        return is;\n    }\n    friend\
     \ std::ostream& operator << (std::ostream &os, const mint& rhs) noexcept { return\
     \ os << rhs.v; }\n};\nusing mint61 = modint61<2305843009213693951>;\n#line 6 \"\
-    Test/Aizu Online Judge/ALDS1/ALDS1_14_C.test.cpp\"\n\nusing namespace std;\n\n\
-    int main() {\n    ios::sync_with_stdio(false);\n    cin.tie(0);\n    int h, w;\n\
+    Test/Aizu Online Judge/ALDS1/ALDS1_14_C.test.cpp\"\nusing namespace std;\n\nint\
+    \ main() {\n    ios::sync_with_stdio(false);\n    cin.tie(0);\n    int h, w;\n\
     \    cin >> h >> w;\n    vector<mint61> Y(1001), X(1001);\n    Y[0] = X[0] = 1;\n\
     \    for(int y = 0; y < 1000; y++){\n        Y[y + 1] = Y[y] * 334;\n    }\n \
     \   for(int x = 0; x < 1000; x++){\n        X[x + 1] = X[x] * 114514;\n    }\n\
@@ -86,7 +86,7 @@ data:
     }\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/problems/ALDS1_14_C\"\n\
     \n#include <bits/stdc++.h>\n#include \"DataStructure/CumulativeSum2D.hpp\"\n#include\
-    \ \"Math/modint_61bit.hpp\"\n\nusing namespace std;\n\nint main() {\n    ios::sync_with_stdio(false);\n\
+    \ \"Math/modint_61bit.hpp\"\nusing namespace std;\n\nint main() {\n    ios::sync_with_stdio(false);\n\
     \    cin.tie(0);\n    int h, w;\n    cin >> h >> w;\n    vector<mint61> Y(1001),\
     \ X(1001);\n    Y[0] = X[0] = 1;\n    for(int y = 0; y < 1000; y++){\n       \
     \ Y[y + 1] = Y[y] * 334;\n    }\n    for(int x = 0; x < 1000; x++){\n        X[x\
@@ -106,7 +106,7 @@ data:
   isVerificationFile: true
   path: Test/Aizu Online Judge/ALDS1/ALDS1_14_C.test.cpp
   requiredBy: []
-  timestamp: '2023-06-22 23:15:12+09:00'
+  timestamp: '2023-06-22 23:24:38+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: Test/Aizu Online Judge/ALDS1/ALDS1_14_C.test.cpp
