@@ -3,6 +3,7 @@
 #include <bits/stdc++.h>
 #include "DataStructure/fenwick_tree.hpp"
 
+
 int main(){
     int n;
     std::cin >> n;
