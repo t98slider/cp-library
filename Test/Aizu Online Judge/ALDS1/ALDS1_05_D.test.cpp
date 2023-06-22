@@ -1,7 +1,7 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/5/ALDS1_5_D"
 
 #include <bits/stdc++.h>
-#include "../../../DataStructure/fenwick_tree.hpp"
+#include "DataStructure/fenwick_tree.hpp"
 
 int main(){
     int n;
