@@ -49,21 +49,21 @@ data:
     \ r + 1, x);\n        }else{\n            int p;\n            cin >> p;\n    \
     \        cout << seg[p] << '\\n';\n        }\n    }\n}\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/problems/DSL_2_D\"\n\n\
-    #include <bits/stdc++.h>\n#include \"../../../DataStructure/segtree_dual.hpp\"\
-    \n\nusing namespace std;\nint op(int af, int bf){ return af == -1 ? bf : af; }\n\
-    int id(){ return -1; }\n\nint main() {\n    ios::sync_with_stdio(false);\n   \
-    \ cin.tie(0);\n    int n, q;\n    cin >> n >> q;\n    dual_segtree<int, op, id>\
-    \ seg(vector<int>(n, numeric_limits<int>::max()));\n    while(q--){\n        int\
-    \ cmd;\n        cin >> cmd;\n        if(cmd == 0){\n            int l, r, x;\n\
-    \            cin >> l >> r >> x;\n            seg.apply(l, r + 1, x);\n      \
-    \  }else{\n            int p;\n            cin >> p;\n            cout << seg[p]\
-    \ << '\\n';\n        }\n    }\n}\n"
+    #include <bits/stdc++.h>\n#include \"DataStructure/segtree_dual.hpp\"\n\nusing\
+    \ namespace std;\nint op(int af, int bf){ return af == -1 ? bf : af; }\nint id(){\
+    \ return -1; }\n\nint main() {\n    ios::sync_with_stdio(false);\n    cin.tie(0);\n\
+    \    int n, q;\n    cin >> n >> q;\n    dual_segtree<int, op, id> seg(vector<int>(n,\
+    \ numeric_limits<int>::max()));\n    while(q--){\n        int cmd;\n        cin\
+    \ >> cmd;\n        if(cmd == 0){\n            int l, r, x;\n            cin >>\
+    \ l >> r >> x;\n            seg.apply(l, r + 1, x);\n        }else{\n        \
+    \    int p;\n            cin >> p;\n            cout << seg[p] << '\\n';\n   \
+    \     }\n    }\n}\n"
   dependsOn:
   - DataStructure/segtree_dual.hpp
   isVerificationFile: true
   path: Test/Aizu Online Judge/DSL/DSL_2_D.test.cpp
   requiredBy: []
-  timestamp: '2023-06-22 14:48:05+09:00'
+  timestamp: '2023-06-22 23:08:47+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: Test/Aizu Online Judge/DSL/DSL_2_D.test.cpp
