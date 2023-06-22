@@ -1,5 +1,5 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/5/ALDS1_11_D"
-
+ 
 #include <bits/stdc++.h>
 #include "Graph/dsu.hpp"
 using namespace std;
