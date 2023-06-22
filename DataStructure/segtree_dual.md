@@ -13,6 +13,20 @@ documentation_of: ./segtree_dual.hpp
 - `S mapping(S after, S before)` : `before` に `after` を作用させる関数。(合成写像と兼用) 
 - `S id()` : 恒等写像。 `mapping(id(), f) = mapping(f, id()) = f` が満たされるようにする
 
+<br>
+テンプレート引数の例(区間加算・1点収得)。適宜書き換えて使用する。
+
+```
+//dual_segtree<S, mapping, id> seg(size); のように宣言
+using S = int;
+//bfにafを作用させた時の変化
+S mapping(S af, S bf){ return bf + af; }
+//恒等写像
+S id(){ return 0; }
+```
+
+<br>
+
 |関数名など|機能|計算量|
 |---------|----|-----|
 |(1) `dual_segtree<S, mapping, id>(int N)` <br> (2) `dual_segtree<S, mapping, id>(std::vector<S> vec)` | (1) $N$ 個の要素を持つ配列を作る。初期値は `id()` <br> (2) 双対セグ木の要素を `vec` で初期化する。| $\text{O}(N)$ |
