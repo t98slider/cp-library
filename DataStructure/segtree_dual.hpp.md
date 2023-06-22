@@ -84,6 +84,6 @@ title: "\u53CC\u5BFE\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
 
 |関数名など|機能|計算量|
 |---------|----|-----|
-|(1) `dual_segtree<S, mapping, id>(int n)` <br> (2) `dual_segtree<S, mapping, id>(std::vector<S> vec)` | (1) $n$ 個の要素を持つ配列を作る。初期値は `id()` <br> (2) 双対セグ木の要素を `vec` で初期化する。| $\text{O}(n)$ |
-|`S a[p]`|`a[p]` を収得する。  | $\text{O}(\log n)$|
-|(1)`void apply(int p, S f)` <br> (2)`void apply(int l, int r, S f)`|(1) `a[p] = mapping(f, a[p])` を行う。<br>(2) $l \leq i < r$ について`a[i] = mapping(f, a[i])` を行う。 | $\text{O}(\log n)$ |
+|(1) `dual_segtree<S, mapping, id>(int n)` <br> (2) `dual_segtree<S, mapping, id>(std::vector<S> vec)` | (1) $N$ 個の要素を持つ配列を作る。初期値は `id()` <br> (2) 双対セグ木の要素を `vec` で初期化する。| $\text{O}(N)$ |
+|`S a[p]`|`a[p]` を収得する。  | $\text{O}(\log N)$|
+|(1)`void apply(int p, S f)` <br> (2)`void apply(int l, int r, S f)`|(1) `a[p] = mapping(f, a[p])` を行う。<br>(2) $l \leq i < r$ について`a[i] = mapping(f, a[i])` を行う。 | $\text{O}(\log N)$ |
