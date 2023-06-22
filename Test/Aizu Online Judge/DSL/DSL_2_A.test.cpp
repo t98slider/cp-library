@@ -1,7 +1,7 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/library/3/DSL/1/DSL_2_A"
 
 #include <bits/stdc++.h>
-#include "../../../DataStructure/segtree.hpp"
+#include "DataStructure/segtree.hpp"
 
 int op(int lhs, int rhs) {
     return std::min(lhs, rhs);
