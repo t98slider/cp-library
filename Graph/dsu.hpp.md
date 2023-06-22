@@ -72,8 +72,8 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - Test/Library Checker/Data Structure/unionfind.test.cpp
-  - Test/Aizu Online Judge/ALDS1/ALDS1_11_D.test.cpp
   - Test/Aizu Online Judge/DSL/DSL_1_A.test.cpp
+  - Test/Aizu Online Judge/ALDS1/ALDS1_11_D.test.cpp
 documentation_of: Graph/dsu.hpp
 layout: document
 title: Union Find
