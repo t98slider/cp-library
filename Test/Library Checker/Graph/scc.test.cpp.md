@@ -48,19 +48,19 @@ data:
     \      std::cout << vec.size();\n        for(auto &&v : vec) std::cout << ' '\
     \ << v;\n        std::cout << '\\n';\n    }\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/scc\"\n\n#include <bits/stdc++.h>\n\
-    #include \"../../../Graph/scc.hpp\"\n\nint main() {\n    std::cin.tie(0);\n  \
-    \  std::ios::sync_with_stdio(false);\n    int n, m, u, v;\n    std::cin >> n >>\
-    \ m;\n    std::vector<std::vector<int>> g(n);\n    for(int i = 0; i < m; i++){\n\
-    \        std::cin >> u >> v;\n        g[u].emplace_back(v);\n    }\n    SCC scc(g);\n\
-    \    auto G = scc.groups();\n    std::cout << G.size() << '\\n';\n    for(auto\
-    \ &&vec : scc.groups()){\n        std::cout << vec.size();\n        for(auto &&v\
-    \ : vec) std::cout << ' ' << v;\n        std::cout << '\\n';\n    }\n}\n"
+    #include \"Graph/scc.hpp\"\n\nint main() {\n    std::cin.tie(0);\n    std::ios::sync_with_stdio(false);\n\
+    \    int n, m, u, v;\n    std::cin >> n >> m;\n    std::vector<std::vector<int>>\
+    \ g(n);\n    for(int i = 0; i < m; i++){\n        std::cin >> u >> v;\n      \
+    \  g[u].emplace_back(v);\n    }\n    SCC scc(g);\n    auto G = scc.groups();\n\
+    \    std::cout << G.size() << '\\n';\n    for(auto &&vec : scc.groups()){\n  \
+    \      std::cout << vec.size();\n        for(auto &&v : vec) std::cout << ' '\
+    \ << v;\n        std::cout << '\\n';\n    }\n}\n"
   dependsOn:
   - Graph/scc.hpp
   isVerificationFile: true
   path: Test/Library Checker/Graph/scc.test.cpp
   requiredBy: []
-  timestamp: '2023-06-20 01:41:14+09:00'
+  timestamp: '2023-06-22 23:16:09+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: Test/Library Checker/Graph/scc.test.cpp

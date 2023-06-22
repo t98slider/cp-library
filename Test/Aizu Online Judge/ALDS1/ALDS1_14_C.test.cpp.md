@@ -85,28 +85,28 @@ data:
     \          cout << y << ' ' << x << '\\n';\n            }\n        }\n    }\n\
     }\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/problems/ALDS1_14_C\"\n\
-    \n#include <bits/stdc++.h>\n#include \"../../../DataStructure/CumulativeSum2D.hpp\"\
-    \n#include \"../../../Math/modint_61bit.hpp\"\n\nusing namespace std;\n\nint main()\
-    \ {\n    ios::sync_with_stdio(false);\n    cin.tie(0);\n    int h, w;\n    cin\
-    \ >> h >> w;\n    vector<mint61> Y(1001), X(1001);\n    Y[0] = X[0] = 1;\n   \
-    \ for(int y = 0; y < 1000; y++){\n        Y[y + 1] = Y[y] * 334;\n    }\n    for(int\
-    \ x = 0; x < 1000; x++){\n        X[x + 1] = X[x] * 114514;\n    }\n    CumulativeSum2D<mint61>\
-    \ A(h, w);\n    for(int y = 0; y < h; y++){\n        string s;\n        cin >>\
-    \ s;\n        for(int x = 0; x < w; x++){\n            A.add(y, x, Y[y] * X[x]\
-    \ * s[x]);\n        }\n    }\n    A.build();\n\n    int h2, w2;\n    mint61 hash;\n\
-    \    cin >> h2 >> w2;\n    for(int y = 0; y < h2; y++){\n        string s;\n \
-    \       cin >> s;\n        for(int x = 0; x < w2; x++){\n            hash += Y[y]\
-    \ * X[x] * s[x];\n        }\n    }\n\n    for(int y = 0; y + h2 <= h; y++){\n\
-    \        for(int x = 0; x + w2 <= w; x++){\n            if(hash * Y[y] * X[x]\
-    \ == A.query(y, x, y + h2, x + w2)){\n                cout << y << ' ' << x <<\
-    \ '\\n';\n            }\n        }\n    }\n}\n"
+    \n#include <bits/stdc++.h>\n#include \"DataStructure/CumulativeSum2D.hpp\"\n#include\
+    \ \"Math/modint_61bit.hpp\"\n\nusing namespace std;\n\nint main() {\n    ios::sync_with_stdio(false);\n\
+    \    cin.tie(0);\n    int h, w;\n    cin >> h >> w;\n    vector<mint61> Y(1001),\
+    \ X(1001);\n    Y[0] = X[0] = 1;\n    for(int y = 0; y < 1000; y++){\n       \
+    \ Y[y + 1] = Y[y] * 334;\n    }\n    for(int x = 0; x < 1000; x++){\n        X[x\
+    \ + 1] = X[x] * 114514;\n    }\n    CumulativeSum2D<mint61> A(h, w);\n    for(int\
+    \ y = 0; y < h; y++){\n        string s;\n        cin >> s;\n        for(int x\
+    \ = 0; x < w; x++){\n            A.add(y, x, Y[y] * X[x] * s[x]);\n        }\n\
+    \    }\n    A.build();\n\n    int h2, w2;\n    mint61 hash;\n    cin >> h2 >>\
+    \ w2;\n    for(int y = 0; y < h2; y++){\n        string s;\n        cin >> s;\n\
+    \        for(int x = 0; x < w2; x++){\n            hash += Y[y] * X[x] * s[x];\n\
+    \        }\n    }\n\n    for(int y = 0; y + h2 <= h; y++){\n        for(int x\
+    \ = 0; x + w2 <= w; x++){\n            if(hash * Y[y] * X[x] == A.query(y, x,\
+    \ y + h2, x + w2)){\n                cout << y << ' ' << x << '\\n';\n       \
+    \     }\n        }\n    }\n}\n"
   dependsOn:
   - DataStructure/CumulativeSum2D.hpp
   - Math/modint_61bit.hpp
   isVerificationFile: true
   path: Test/Aizu Online Judge/ALDS1/ALDS1_14_C.test.cpp
   requiredBy: []
-  timestamp: '2023-06-22 11:24:04+09:00'
+  timestamp: '2023-06-22 23:15:12+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: Test/Aizu Online Judge/ALDS1/ALDS1_14_C.test.cpp

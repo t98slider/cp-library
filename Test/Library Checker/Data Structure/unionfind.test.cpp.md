@@ -47,7 +47,7 @@ data:
     \ v);\n        } else {\n            std::cout << uf.same(u, v) << '\\n';\n  \
     \      }\n    }\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/unionfind\"\n\n#include\
-    \ <bits/stdc++.h>\n#include \"../../../Graph/dsu.hpp\"\n\nint main() {\n    std::cin.tie(0);\n\
+    \ <bits/stdc++.h>\n#include \"Graph/dsu.hpp\"\n\nint main() {\n    std::cin.tie(0);\n\
     \    std::ios::sync_with_stdio(false);\n    int n, q;\n    std::cin >> n >> q;\n\
     \    dsu uf(n);\n    while(q--){\n        int cmd, u, v;\n        std::cin >>\
     \ cmd >> u >> v;\n        if(cmd == 0) {\n            uf.merge(u, v);\n      \
@@ -58,7 +58,7 @@ data:
   isVerificationFile: true
   path: Test/Library Checker/Data Structure/unionfind.test.cpp
   requiredBy: []
-  timestamp: '2023-06-20 01:39:07+09:00'
+  timestamp: '2023-06-22 23:15:50+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: Test/Library Checker/Data Structure/unionfind.test.cpp
