@@ -3,7 +3,6 @@
 #include <bits/stdc++.h>
 #include "DataStructure/CumulativeSum2D.hpp"
 #include "Math/modint_61bit.hpp"
-
 using namespace std;
 
 int main() {
