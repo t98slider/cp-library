@@ -1,7 +1,7 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/problems/DSL_2_D"
 
 #include <bits/stdc++.h>
-#include "../../../DataStructure/segtree_dual.hpp"
+#include "DataStructure/segtree_dual.hpp"
 
 using namespace std;
 int op(int af, int bf){ return af == -1 ? bf : af; }
