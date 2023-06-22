@@ -26,14 +26,14 @@ data:
     \    std::vector<U> data;\n\n    U sum(int r) {\n        U s = 0;\n        while\
     \ (r > 0) {\n            s += data[r - 1];\n            r -= r & -r;\n       \
     \ }\n        return s;\n    }\n};\n#line 5 \"Test/Library Checker/Data Structure/point_add_range_sum.test.cpp\"\
-    \n\nusing namespace std;\n\nint main() {\n    ios::sync_with_stdio(false);\n \
-    \   cin.tie(0);\n    int N, Q, cmd, l, r, v;\n    cin >> N >> Q;\n    fenwick_tree<long\
+    \nusing namespace std;\n\nint main() {\n    ios::sync_with_stdio(false);\n   \
+    \ cin.tie(0);\n    int N, Q, cmd, l, r, v;\n    cin >> N >> Q;\n    fenwick_tree<long\
     \ long> fw(N);\n    for(int i = 0; i < N; i++){\n        cin >> v;\n        fw.add(i,\
     \ v);\n    }\n    while(Q--){\n        cin >> cmd >> l >> r;\n        if(cmd ==\
     \ 0){\n            fw.add(l, r);\n        }else{\n            cout << fw.sum(l,\
     \ r) << '\\n';\n        }\n    }\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/point_add_range_sum\"\n\
-    \n#include <bits/stdc++.h>\n#include \"DataStructure/fenwick_tree.hpp\"\n\nusing\
+    \n#include <bits/stdc++.h>\n#include \"DataStructure/fenwick_tree.hpp\"\nusing\
     \ namespace std;\n\nint main() {\n    ios::sync_with_stdio(false);\n    cin.tie(0);\n\
     \    int N, Q, cmd, l, r, v;\n    cin >> N >> Q;\n    fenwick_tree<long long>\
     \ fw(N);\n    for(int i = 0; i < N; i++){\n        cin >> v;\n        fw.add(i,\
@@ -45,7 +45,7 @@ data:
   isVerificationFile: true
   path: Test/Library Checker/Data Structure/point_add_range_sum.test.cpp
   requiredBy: []
-  timestamp: '2023-06-22 23:15:37+09:00'
+  timestamp: '2023-06-22 23:27:29+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: Test/Library Checker/Data Structure/point_add_range_sum.test.cpp
