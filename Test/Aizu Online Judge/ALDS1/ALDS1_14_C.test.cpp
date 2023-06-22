@@ -1,8 +1,8 @@
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/problems/ALDS1_14_C"
 
 #include <bits/stdc++.h>
-#include "../../../DataStructure/CumulativeSum2D.hpp"
-#include "../../../Math/modint_61bit.hpp"
+#include "DataStructure/CumulativeSum2D.hpp"
+#include "Math/modint_61bit.hpp"
 
 using namespace std;
 
