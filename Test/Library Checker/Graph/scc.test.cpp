@@ -1,7 +1,7 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/scc"
 
 #include <bits/stdc++.h>
-#include "../../../Graph/scc.hpp"
+#include "Graph/scc.hpp"
 
 int main() {
     std::cin.tie(0);
