@@ -26,15 +26,15 @@ data:
     \    std::vector<U> data;\n\n    U sum(int r) {\n        U s = 0;\n        while\
     \ (r > 0) {\n            s += data[r - 1];\n            r -= r & -r;\n       \
     \ }\n        return s;\n    }\n};\n#line 5 \"Test/Aizu Online Judge/ALDS1/ALDS1_05_D.test.cpp\"\
-    \n\nint main(){\n    int n;\n    std::cin >> n;\n    std::vector<int> a(n), ca;\n\
-    \    for(auto &&v : a) std::cin >> v;\n    ca = a;\n    sort(ca.begin(), ca.end());\n\
-    \    ca.erase(std::unique(ca.begin(), ca.end()), ca.end());\n    int m = ca.size();\n\
-    \    fenwick_tree<int> fw(m);\n    long long ans = 0;\n    for(auto &&v : a){\n\
-    \        v = std::distance(ca.begin(), std::lower_bound(ca.begin(), ca.end(),\
-    \ v));\n        ans += fw.sum(v + 1, m);\n        fw.add(v, 1);\n    }\n    std::cout\
-    \ << ans << '\\n';\n}\n"
+    \n\n\nint main(){\n    int n;\n    std::cin >> n;\n    std::vector<int> a(n),\
+    \ ca;\n    for(auto &&v : a) std::cin >> v;\n    ca = a;\n    sort(ca.begin(),\
+    \ ca.end());\n    ca.erase(std::unique(ca.begin(), ca.end()), ca.end());\n   \
+    \ int m = ca.size();\n    fenwick_tree<int> fw(m);\n    long long ans = 0;\n \
+    \   for(auto &&v : a){\n        v = std::distance(ca.begin(), std::lower_bound(ca.begin(),\
+    \ ca.end(), v));\n        ans += fw.sum(v + 1, m);\n        fw.add(v, 1);\n  \
+    \  }\n    std::cout << ans << '\\n';\n}\n"
   code: "#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/5/ALDS1_5_D\"\
-    \n\n#include <bits/stdc++.h>\n#include \"DataStructure/fenwick_tree.hpp\"\n\n\
+    \n\n#include <bits/stdc++.h>\n#include \"DataStructure/fenwick_tree.hpp\"\n\n\n\
     int main(){\n    int n;\n    std::cin >> n;\n    std::vector<int> a(n), ca;\n\
     \    for(auto &&v : a) std::cin >> v;\n    ca = a;\n    sort(ca.begin(), ca.end());\n\
     \    ca.erase(std::unique(ca.begin(), ca.end()), ca.end());\n    int m = ca.size();\n\
@@ -47,7 +47,7 @@ data:
   isVerificationFile: true
   path: Test/Aizu Online Judge/ALDS1/ALDS1_05_D.test.cpp
   requiredBy: []
-  timestamp: '2023-06-22 23:14:42+09:00'
+  timestamp: '2023-06-22 23:21:53+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: Test/Aizu Online Judge/ALDS1/ALDS1_05_D.test.cpp
