@@ -10,7 +10,7 @@ Segment Tree は長さ $n$ の `S` 型の配列において、区間の1点変�
 
 |関数名など|機能|計算量|
 |---------|----|-----|
-|(1) `segtree<S, op, e>(int n)` <br> (2) `segtree<S, op, e>(std::vector<S> v)` | 型 `S` /二項演算 `S op(S a, S b)` /単位元 `S e()` を定義する必要がある．<br> (1) 長さ $N$ の配列を作る．初期値は `e()` となる．<br> (2) 長さ `v.size()` の配列を作る．`v` の内容が初期値となる. | $\text{O}(N)$ |
+|(1) `segtree<S, op, e>(int N)` <br> (2) `segtree<S, op, e>(std::vector<S> v)` | 型 `S` /二項演算 `S op(S a, S b)` /単位元 `S e()` を定義する必要がある．<br> (1) 長さ $N$ の配列を作る．初期値は `e()` となる．<br> (2) 長さ `v.size()` の配列を作る．`v` の内容が初期値となる. | $\text{O}(N)$ |
 | `void set(int p, S x)` | `a[p]` に `x` を代入する.   $0 \leq p < N$  | $\text{O}(\log N)$ |
 |(1) `S get(int p)` <br> (2) `S a[p]` | `a[p]` を返す. $0 \leq p < N$  | $\text{O}(1)$ |
 | `S prod(int l, int r)`| $\text{op}(a[l], \ldots, a[r - 1])$ をモノイドの性質を満たしていると仮定して計算する. $l = r$ のときは、 `e()` を返す. | $\text{O}(\log N)$ |
