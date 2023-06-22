@@ -14,14 +14,15 @@ documentation_of: ./segtree_dual.hpp
 - `S id()` : 恒等写像。 `mapping(id(), f) = mapping(f, id()) = f` が満たされるようにする
 
 <br>
-テンプレート引数の例(区間加算・1点収得)。適宜書き換えて使用する。
+テンプレート引数の例 (区間加算・1点収得)。適宜書き換えて使用する。
 
 ```
-//dual_segtree<S, mapping, id> seg(size); のように宣言
+// dual_segtree<S, mapping, id> seg(size); のように宣言
+
 using S = int;
-//bfにafを作用させた時の変化
+// bf に af を作用させた時の変化
 S mapping(S af, S bf){ return bf + af; }
-//恒等写像
+// 恒等写像
 S id(){ return 0; }
 ```
 
