@@ -9,6 +9,6 @@ Fenwick Tree は区間の要素の総和を $\text{O}(\log N)$ で求めるこ�
 
 |関数名など|機能|計算量|
 |---------|----|-----|
-|`fenwick_tree<T>(int n)`| 宣言.  $n$ 個の要素をもつ配列を作る．初期値は0．<br> `T` は `+` と `-` が定義されている構造体を載せることができる。| $\text{O}(n)$ |
-|`void add(int p, T x)`| $a[p] += x$ を行う.  $0 \leq p < n$ | $\text{O}(\log n)$|
-|`T sum(int l, int r)`| $a[l] + a[l - 1] + \cdots + a[r - 1]$  を返す。 $0 \leq l \leq r < n$ | $\text{O}(\log n)$ |
+|`fenwick_tree<T>(int N)`| 宣言.  $N$ 個の要素をもつ配列を作る．初期値は0．<br> `T` は `+` と `-` が定義されている構造体を載せることができる。| $\text{O}(N)$ |
+|`void add(int p, T x)`| $a[p] += x$ を行う.  $0 \leq p < n$ | $\text{O}(\log N)$|
+|`T sum(int l, int r)`| $a[l] + a[l - 1] + \cdots + a[r - 1]$  を返す。 $0 \leq l \leq r < n$ | $\text{O}(\log N)$ |
