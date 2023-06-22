@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: Test/Aizu Online Judge/DSL/DSL_2_D.test.cpp
+    title: Test/Aizu Online Judge/DSL/DSL_2_D.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"DataStructure/segtree_dual.hpp\"\ntemplate <class S, S (*mapping)(S,\
@@ -61,8 +64,9 @@ data:
   path: DataStructure/segtree_dual.hpp
   requiredBy: []
   timestamp: '2023-06-21 18:18:30+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - Test/Aizu Online Judge/DSL/DSL_2_D.test.cpp
 documentation_of: DataStructure/segtree_dual.hpp
 layout: document
 redirect_from:
