@@ -1,7 +1,7 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/unionfind"
 
 #include <bits/stdc++.h>
-#include "../../../Graph/dsu.hpp"
+#include "Graph/dsu.hpp"
 
 int main() {
     std::cin.tie(0);
