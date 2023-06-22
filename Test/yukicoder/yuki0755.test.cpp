@@ -1,8 +1,8 @@
 #define PROBLEM "https://yukicoder.me/problems/no/755"
 
 #include <bits/stdc++.h>
-#include "../../DataStructure/CumulativeSum2D.hpp"
-#include "../../DataStructure/CumulativeSum2D_imos.hpp"
+#include "DataStructure/CumulativeSum2D.hpp"
+#include "DataStructure/CumulativeSum2D_imos.hpp"
 
 using namespace std;
 using ll = long long;
