@@ -4,6 +4,9 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
+    path: Test/Aizu Online Judge/ALDS1/ALDS1_14_C.test.cpp
+    title: Test/Aizu Online Judge/ALDS1/ALDS1_14_C.test.cpp
+  - icon: ':heavy_check_mark:'
     path: Test/yukicoder/yuki0755.test.cpp
     title: Test/yukicoder/yuki0755.test.cpp
   _isVerificationFailed: false
@@ -50,6 +53,7 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - Test/yukicoder/yuki0755.test.cpp
+  - Test/Aizu Online Judge/ALDS1/ALDS1_14_C.test.cpp
 documentation_of: DataStructure/CumulativeSum2D.hpp
 layout: document
 title: "2\u6B21\u5143\u7D2F\u7A4D\u548C"

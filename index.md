@@ -32,7 +32,7 @@ data:
     - icon: ':warning:'
       path: Math/modint.hpp
       title: Math/modint.hpp
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: Math/modint_61bit.hpp
       title: Math/modint_61bit.hpp
   verificationCategories:
@@ -44,6 +44,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Test/Aizu Online Judge/ALDS1/ALDS1_11_D.test.cpp
       title: Test/Aizu Online Judge/ALDS1/ALDS1_11_D.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: Test/Aizu Online Judge/ALDS1/ALDS1_14_C.test.cpp
+      title: Test/Aizu Online Judge/ALDS1/ALDS1_14_C.test.cpp
   - name: Test/Aizu Online Judge/DSL
     pages:
     - icon: ':heavy_check_mark:'
