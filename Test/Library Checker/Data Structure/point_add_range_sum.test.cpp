@@ -1,7 +1,7 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/point_add_range_sum"
 
 #include <bits/stdc++.h>
-#include "../../../DataStructure/fenwick_tree.hpp"
+#include "DataStructure/fenwick_tree.hpp"
 
 using namespace std;
 
