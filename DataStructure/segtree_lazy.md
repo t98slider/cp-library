@@ -16,7 +16,25 @@ documentation_of: ./segtree_lazy.hpp
 
 を $\text{O}(\log N)$ で行うことが出来る．<br>
 
-また，このライブラリはオラクルとしてop, e, mapping, composition, idを使用するが、これらが定数時間で動くものと仮定したときの計算量を記述する．オラクル内部の計算量が $\text{O}(f(n))$ である場合はすべての計算量が $O(f(n))$ 倍となる．
+また，このライブラリはオラクルとしてop, e, mapping, composition, idを使用するが、これらが定数時間で動くものと仮定したときの計算量を記述する．オラクル内部の計算量が $\text{O}(f(n))$ である場合はすべての計算量が $O(f(n))$ 倍となる．<br>
+
+テンプレート引数の例 (区間min演算・区間min更新)。適宜書き換えて使用する。
+```
+// lazy_segtree<S, op, e, F, mapping, composition, id> seg(200000);
+
+using S = int;
+using F = int;
+// 単位元
+S e(){return 1 << 30;}
+// 区間演算
+S op(S lhs, S rhs){ return min(lhs, rhs); }
+// x に f を作用させた時の変化
+S mapping(F f, S x){return min(x, f);}
+// bf を作用させた後に af を作用させる
+F composition(F af, F bf){return min(af, bf);}
+// 恒等写像
+F id(){return 1 << 30;}
+```
 
 |関数名など|機能|計算量|
 |---------|----|-----|
