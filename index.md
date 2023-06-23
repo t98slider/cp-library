@@ -18,6 +18,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: DataStructure/segtree_dual.hpp
       title: "\u53CC\u5BFE\u30BB\u30B0\u30E1\u30F3\u30C8\u6728"
+    - icon: ':warning:'
+      path: DataStructure/segtree_lazy.hpp
+      title: DataStructure/segtree_lazy.hpp
   - name: Graph
     pages:
     - icon: ':heavy_check_mark:'
