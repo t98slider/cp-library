@@ -186,6 +186,4 @@ F id(){return 1 << 30;}
 
 |関数名など|機能|計算量|
 |---------|----|-----|
-|`fenwick_tree<T>(int N)`| 宣言.  $N$ 個の要素をもつ配列を作る．初期値は0．<br> `T` は `+` と `-` が定義されている構造体を載せることができる。| $\text{O}(N)$ |
-|`void add(int p, T x)`| $a[p] += x$ を行う.  $0 \leq p < N$ | $\text{O}(\log N)$|
-|`T sum(int l, int r)`| $a[l] + a[l - 1] + \cdots + a[r - 1]$  を返す。 $0 \leq l \leq r < N$ | $\text{O}(\log N)$ |
+|(1) `lazy_segtree<S, op, e, F, mapping, composition, id>(int N)` <br>(2) ` lazy_segtree<S, op, e, F, mapping, composition, id>(std::vector<T> v)`|(1) 長さ $N$ の配列を作る。<br>(2) 長さ `v.size()` の配列を作る。`v` の内容が初期値になる。<br>・モノイドの型`S` <br>・ $\cdot: S \times S \to S$ を計算する関数 `S op(S a, S b)` <br>・ $e$ を返す関数 `S e()` <br>・写像の型 `F` <br>・ $f(x)$ を返す関数 `S mapping(F f, S x)` <br>・ $f \circ g$ を返す関数 `F composition(F f, F g)` <br>・ $id$ を返す関数 `F id()` <br> を定義する必要がある。| $\text{O}(N)$ |
