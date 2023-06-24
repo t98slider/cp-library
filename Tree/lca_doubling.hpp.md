@@ -6,9 +6,6 @@ data:
   - icon: ':heavy_check_mark:'
     path: Test/Library Checker/Tree/lca_doubling.test.cpp
     title: Test/Library Checker/Tree/lca_doubling.test.cpp
-  - icon: ':heavy_check_mark:'
-    path: Test/Library Checker/lca01.test.cpp
-    title: Test/Library Checker/lca01.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -85,7 +82,6 @@ data:
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - Test/Library Checker/Tree/lca_doubling.test.cpp
-  - Test/Library Checker/lca01.test.cpp
 documentation_of: Tree/lca_doubling.hpp
 layout: document
 redirect_from:
