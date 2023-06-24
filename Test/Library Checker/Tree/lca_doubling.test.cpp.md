@@ -3,7 +3,7 @@ data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
     path: Tree/lca_doubling.hpp
-    title: Tree/lca_doubling.hpp
+    title: "\u30C0\u30D6\u30EA\u30F3\u30B0LCA"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false

@@ -42,7 +42,7 @@ data:
     pages:
     - icon: ':heavy_check_mark:'
       path: Tree/lca_doubling.hpp
-      title: Tree/lca_doubling.hpp
+      title: "\u30C0\u30D6\u30EA\u30F3\u30B0LCA"
   verificationCategories:
   - name: Test/Aizu Online Judge/ALDS1
     pages:
