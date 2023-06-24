@@ -3,7 +3,8 @@ data:
   _extendedDependsOn:
   - icon: ':heavy_check_mark:'
     path: Tree/lca_doubling.hpp
-    title: "\u30C0\u30D6\u30EA\u30F3\u30B0LCA"
+    title: "\u6700\u5C0F\u5171\u901A\u7956\u5148 (LCA, Lowest Common Ancestor) (\u30BF\
+      \u30D6\u30EA\u30F3\u30B0)"
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false

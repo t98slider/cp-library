@@ -81,7 +81,8 @@ data:
   - Test/Library Checker/Tree/lca_doubling.test.cpp
 documentation_of: Tree/lca_doubling.hpp
 layout: document
-title: "\u30C0\u30D6\u30EA\u30F3\u30B0LCA"
+title: "\u6700\u5C0F\u5171\u901A\u7956\u5148 (LCA, Lowest Common Ancestor) (\u30BF\
+  \u30D6\u30EA\u30F3\u30B0)"
 ---
 
 ## 概要
