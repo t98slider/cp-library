@@ -44,7 +44,7 @@ data:
       path: Tree/lca_doubling.hpp
       title: "\u6700\u5C0F\u5171\u901A\u7956\u5148 (LCA, Lowest Common Ancestor) (\u30BF\
         \u30D6\u30EA\u30F3\u30B0)"
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: Tree/lca_ufdoubling.hpp
       title: "\u6700\u5C0F\u5171\u901A\u7956\u5148 (LCA, Lowest Common Ancestor) (\u30C0\
         \u30D6\u30EA\u30F3\u30B0+UF)"
@@ -89,6 +89,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Test/Library Checker/Tree/lca_doubling.test.cpp
       title: Test/Library Checker/Tree/lca_doubling.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: Test/Library Checker/Tree/lca_ufdoubling.test.cpp
+      title: Test/Library Checker/Tree/lca_ufdoubling.test.cpp
   - name: Test/yukicoder
     pages:
     - icon: ':heavy_check_mark:'

@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: Test/Library Checker/Tree/lca_ufdoubling.test.cpp
+    title: Test/Library Checker/Tree/lca_ufdoubling.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"Tree/lca_ufdoubling.hpp\"\nstruct LCA_tree {\n    int n,\
@@ -98,8 +101,9 @@ data:
   path: Tree/lca_ufdoubling.hpp
   requiredBy: []
   timestamp: '2023-06-24 18:57:30+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - Test/Library Checker/Tree/lca_ufdoubling.test.cpp
 documentation_of: Tree/lca_ufdoubling.hpp
 layout: document
 title: "\u6700\u5C0F\u5171\u901A\u7956\u5148 (LCA, Lowest Common Ancestor) (\u30C0\
