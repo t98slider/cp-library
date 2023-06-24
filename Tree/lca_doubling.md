@@ -1,5 +1,5 @@
 ---
-title: ダブリングLCA
+title: 最小共通祖先 (LCA, Lowest Common Ancestor) (タブリング)
 documentation_of: ./lca_doubling.hpp
 ---
 
