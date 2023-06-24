@@ -5,13 +5,12 @@ struct LCA_tree {
     std::vector<int> depth, id;
     LCA_tree(std::vector<std::vector<int>> &_g) : LCA_tree(_g, 0){}
     LCA_tree(std::vector<std::vector<int>> &_g, int r)
-         : n(_g.size()), g(_g), root(r), depth(n), id(n, -1), edge(n),
+         : n(_g.size()), g(_g), root(r), depth(n), depth2(n), id(n, -1), edge(n),
            parent_or_size(n, -1), parent(5, std::vector<int>(n)) {
         for(int i = 2; i < 32; i++) log_table[i] = log_table[i >> 1] + 1;
         std::vector<int> stk, par(n, -1);
         stk.reserve(n);
         stk.emplace_back(root);
-        depth[root] = 0;
         int cnt = 0, timer = 0;
         while(!stk.empty()){
             int v = stk.back();
@@ -20,6 +19,7 @@ struct LCA_tree {
                 for(auto &&u : g[v]){
                     if(id[u] != -1) continue;
                     par[u] = v;
+                    depth[u] = depth[v] + 1;
                     stk.emplace_back(u);
                 }
             }else{
@@ -30,7 +30,7 @@ struct LCA_tree {
                 parent_or_size[x] += parent_or_size[y];
                 parent_or_size[y] = x;
                 parent[0][y] = x;
-                depth[y] = 1;
+                depth2[y] = 1;
                 edge[y] = std::make_pair(timer++, par[v]);
             }
         }
@@ -46,15 +46,15 @@ struct LCA_tree {
         assert(0 <= u && u < n);
         assert(0 <= v && v < n);
         if(u == v) return v;
-        if(depth[u] > depth[v]) std::swap(u, v);
-        int d = std::max(0, depth[v] - depth[u] - 1);
+        if(depth2[u] > depth2[v]) std::swap(u, v);
+        int d = std::max(0, depth2[v] - depth2[u] - 1);
         while(d){
             v = parent[log_table[d & -d]][v];
             d -= d & -d;
         }
         if(u == parent[0][v]) return edge[v].second;
-        if(depth[u] != depth[v]) v = parent[0][v];
-        for(int i = log_table[depth[v]]; i >= 0; i--){
+        if(depth2[u] != depth2[v]) v = parent[0][v];
+        for(int i = log_table[depth2[v]]; i >= 0; i--){
             if(parent[i][u] != parent[i][v]){
                 u = parent[i][u];
                 v = parent[i][v];
@@ -80,12 +80,12 @@ struct LCA_tree {
         return ret;
     }
     private:
-    std::vector<int> parent_or_size;
+    std::vector<int> parent_or_size, depth2;
     std::vector<std::pair<int,int>> edge;
     int leader(int v){
         if(parent_or_size[v] < 0) return v;
         int root = leader(parent_or_size[v]);
-        depth[v] += depth[parent_or_size[v]];
+        depth2[v] += depth2[parent_or_size[v]];
         return parent_or_size[v] = root;
     }
 };
