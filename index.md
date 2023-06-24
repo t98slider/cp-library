@@ -45,7 +45,9 @@ data:
       title: "\u30C0\u30D6\u30EA\u30F3\u30B0LCA"
     - icon: ':warning:'
       path: Tree/lca_ufdoubling.hpp
-      title: Tree/lca_ufdoubling.hpp
+      title: "\u6700\u5C0F\u5171\u901A\u7956\u5148 (LCA, Lowest Common Ancestor) (\u69CB\
+        \u7BC9 $\\text{O}(N \\log \\log N)$ / \u30AF\u30A8\u30EA $\\text{O}(\\log\
+        \ \\log N)$ )"
   verificationCategories:
   - name: Test/Aizu Online Judge/ALDS1
     pages:

@@ -102,8 +102,19 @@ data:
   verifiedWith: []
 documentation_of: Tree/lca_ufdoubling.hpp
 layout: document
-redirect_from:
-- /library/Tree/lca_ufdoubling.hpp
-- /library/Tree/lca_ufdoubling.hpp.html
-title: Tree/lca_ufdoubling.hpp
+title: "\u6700\u5C0F\u5171\u901A\u7956\u5148 (LCA, Lowest Common Ancestor) (\u69CB\
+  \u7BC9 $\\text{O}(N \\log \\log N)$ / \u30AF\u30A8\u30EA $\\text{O}(\\log \\log\
+  \ N)$ )"
 ---
+
+## 概要
+構築 $\text{O}(N\log \log N)$ 、クエリ $\text{O}(\log \log N)$ で最小共通祖先 (Lowest Common Ancestor) を習得できるライブラリである。<br>
+実装はDFSの行きがけ順と帰りがけ順のみを使用していて場合分けをやや簡潔にしている。<br>
+
+|関数名など|機能|計算量|
+|---------|----|-----|
+|`LCA_tree(std::vector<std::vector<int>> G, int root)`|`root` を根とする LCA のダブリングテーブルを構築する。<br>・第1引数には無向辺の木もしくは根付き木を G としてコンストラクタに渡す。<br>・第2引数は省略可能。省略した場合 `0` を根とする。| $\text{O}(N\log \log N)$ |
+|`int lca(int u, int v)`|頂点 $u$ と頂点 $v$ のLCAを返す。| $\text{O}(\log \log N)$ |
+|`int dist(int u, int v)`|頂点 $u$ と頂点 $v$ の距離を出力する。| $\text{O}(\log \log N)$ |
+|`bool on_path(int u, int v, int w)`|頂点 $w$ が頂点 $u$ と頂点 $v$ の単純パス上にあるかを判定する。| $\text{O}(\log \log N)$ |
+|`int min_edge(std::vector<int> ver)`|頂点集合 $\text{ver}$ を連結にするために必要な辺の数を出力する。|頂点集合の大きさを $\|S\|$ として<br> $\text{O}(\|S\|\log \log N)$|
