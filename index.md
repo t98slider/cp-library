@@ -43,6 +43,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Tree/lca_doubling.hpp
       title: "\u30C0\u30D6\u30EA\u30F3\u30B0LCA"
+    - icon: ':warning:'
+      path: Tree/lca_ufdoubling.hpp
+      title: Tree/lca_ufdoubling.hpp
   verificationCategories:
   - name: Test/Aizu Online Judge/ALDS1
     pages:
