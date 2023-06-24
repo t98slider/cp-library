@@ -79,6 +79,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: Test/Library Checker/Graph/scc.test.cpp
       title: Test/Library Checker/Graph/scc.test.cpp
+  - name: Test/Library Checker/Tree
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: Test/Library Checker/Tree/lca_doubling.test.cpp
+      title: Test/Library Checker/Tree/lca_doubling.test.cpp
   - name: Test/Library Checker
     pages:
     - icon: ':heavy_check_mark:'
