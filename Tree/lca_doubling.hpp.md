@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: Test/Library Checker/lca01.test.cpp
+    title: Test/Library Checker/lca01.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"Tree/lca_doubling.hpp\"\nstruct LCA_tree {\n    int n, LOGV,\
@@ -76,8 +79,9 @@ data:
   path: Tree/lca_doubling.hpp
   requiredBy: []
   timestamp: '2023-06-24 15:07:22+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - Test/Library Checker/lca01.test.cpp
 documentation_of: Tree/lca_doubling.hpp
 layout: document
 redirect_from:

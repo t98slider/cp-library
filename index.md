@@ -40,7 +40,7 @@ data:
       title: Math/modint_61bit.hpp
   - name: Tree
     pages:
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: Tree/lca_doubling.hpp
       title: Tree/lca_doubling.hpp
   verificationCategories:
@@ -79,6 +79,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: Test/Library Checker/Graph/scc.test.cpp
       title: Test/Library Checker/Graph/scc.test.cpp
+  - name: Test/Library Checker
+    pages:
+    - icon: ':heavy_check_mark:'
+      path: Test/Library Checker/lca01.test.cpp
+      title: Test/Library Checker/lca01.test.cpp
   - name: Test/yukicoder
     pages:
     - icon: ':heavy_check_mark:'
