@@ -19,17 +19,16 @@ data:
     #line 1 \"Tree/lca_doubling.hpp\"\nstruct LCA_tree {\n    int n, LOGV, root;\n\
     \    std::vector<std::vector<int>> &g, parent;\n    std::vector<int> depth, id;\n\
     \    LCA_tree(std::vector<std::vector<int>> &_g) : LCA_tree(_g, 0){}\n    LCA_tree(std::vector<std::vector<int>>\
-    \ &_g, int r) : n(_g.size()), g(_g), root(r), depth(n, -1), id(n, -1) {\n    \
-    \    LOGV = std::__lg(std::max(1, n - 1));\n        parent.resize(LOGV + 1, std::vector<int>(n,\
+    \ &_g, int r) : n(_g.size()), g(_g), root(r), depth(n), id(n, -1) {\n        LOGV\
+    \ = std::__lg(std::max(1, n - 1));\n        parent.resize(LOGV + 1, std::vector<int>(n,\
     \ -1));\n        std::vector<int> stk;\n        stk.reserve(n);\n        stk.emplace_back(root);\n\
     \        depth[root] = 0;\n        int cnt = 0;\n        while(!stk.empty()){\n\
-    \            int v = stk.back();\n            if(id[v] == -1){\n             \
-    \   id[v] = cnt++;\n                for(int i = 1; (1 << i) <= depth[v]; i++){\n\
-    \                    parent[i][v] = parent[i - 1][parent[i - 1][v]];\n       \
-    \         }\n                for(auto &&u : g[v]){\n                    if(u ==\
-    \ parent[0][v]) continue;\n                    parent[0][u] = v;\n           \
-    \         depth[u] = depth[v] + 1;\n                    stk.emplace_back(u);\n\
-    \                }\n            }else stk.pop_back();\n        }\n    }\n    int\
+    \            int v = stk.back();\n            stk.pop_back();\n            id[v]\
+    \ = cnt++;\n            for(int i = 1; (1 << i) <= depth[v]; i++){\n         \
+    \       parent[i][v] = parent[i - 1][parent[i - 1][v]];\n            }\n     \
+    \       for(auto &&u : g[v]){\n                if(id[u] != -1) continue;\n   \
+    \             parent[0][u] = v;\n                depth[u] = depth[v] + 1;\n  \
+    \              stk.emplace_back(u);\n            }\n        }\n    }\n    int\
     \ lca(int u, int v){\n        if(depth[u] > depth[v]) std::swap(u, v);\n     \
     \   int d = depth[v] - depth[u];\n        while(d){\n            v = parent[std::__lg(d\
     \ & -d)][v];\n            d -= d & -d;\n        }\n        if(u == v) return u;\n\
@@ -64,7 +63,7 @@ data:
   isVerificationFile: true
   path: Test/Library Checker/Tree/lca_doubling.test.cpp
   requiredBy: []
-  timestamp: '2023-06-24 15:17:12+09:00'
+  timestamp: '2023-06-24 15:29:54+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: Test/Library Checker/Tree/lca_doubling.test.cpp
