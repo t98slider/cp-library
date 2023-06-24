@@ -102,9 +102,8 @@ data:
   verifiedWith: []
 documentation_of: Tree/lca_ufdoubling.hpp
 layout: document
-title: "\u6700\u5C0F\u5171\u901A\u7956\u5148 (LCA, Lowest Common Ancestor) (\u69CB\
-  \u7BC9 $\\text{O}(N \\log \\log N)$ / \u30AF\u30A8\u30EA $\\text{O}(\\log \\log\
-  \ N)$ )"
+title: "\u6700\u5C0F\u5171\u901A\u7956\u5148 (LCA, Lowest Common Ancestor) (\u30C0\
+  \u30D6\u30EA\u30F3\u30B0+UF)"
 ---
 
 ## 概要
