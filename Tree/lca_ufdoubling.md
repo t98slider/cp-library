@@ -1,5 +1,5 @@
 ---
-title: 最小共通祖先 (LCA, Lowest Common Ancestor) (構築 $\text{O}(N \log \log N)$ / クエリ $\text{O}(\log \log N)$ )
+title: 最小共通祖先 (LCA, Lowest Common Ancestor) (ダブリング+UF)
 documentation_of: ./lca_ufdoubling.hpp
 ---
 
