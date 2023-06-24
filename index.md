@@ -38,6 +38,11 @@ data:
     - icon: ':heavy_check_mark:'
       path: Math/modint_61bit.hpp
       title: Math/modint_61bit.hpp
+  - name: Tree
+    pages:
+    - icon: ':warning:'
+      path: Tree/lca_doubling.hpp
+      title: Tree/lca_doubling.hpp
   verificationCategories:
   - name: Test/Aizu Online Judge/ALDS1
     pages:
