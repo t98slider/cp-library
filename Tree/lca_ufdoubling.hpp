@@ -67,10 +67,10 @@ struct LCA_tree {
         int lcav = lca(u, v);
         return depth[u] + depth[v] - 2 * depth[lcav];
     }
-    bool on_path(int u, int v, int w){
-        return dist(u, w) + dist(w, v) == dist(u, v);
+    bool on_path(int from, int to, int mid){
+        return dist(from, mid) + dist(mid, to) == dist(from, to);
     }
-    int min_edge(std::vector<int> &ver){
+    int Auxiliary_Tree(std::vector<int> &ver){
         int ret = 0, m = ver.size();
         std::sort(ver.begin(), ver.end(), [&](int va, int vb) {return id[va] < id[vb];});
         for(int i = 0; i < m; i++){
