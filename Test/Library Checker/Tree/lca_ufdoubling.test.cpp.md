@@ -50,12 +50,12 @@ data:
     \            }\n        }\n        if(edge[v].first > edge[u].first) return edge[v].second;\n\
     \        return edge[u].second;\n    }\n    int dist(int u, int v){\n        int\
     \ lcav = lca(u, v);\n        return depth[u] + depth[v] - 2 * depth[lcav];\n \
-    \   }\n    bool on_path(int u, int v, int w){\n        return dist(u, w) + dist(w,\
-    \ v) == dist(u, v);\n    }\n    int min_edge(std::vector<int> &ver){\n       \
-    \ int ret = 0, m = ver.size();\n        std::sort(ver.begin(), ver.end(), [&](int\
-    \ va, int vb) {return id[va] < id[vb];});\n        for(int i = 0; i < m; i++){\n\
-    \            ret += depth[ver[i]];\n            ret -= depth[lca(ver[i], ver[i\
-    \ + 1 == m ? 0 : i + 1])];\n        }\n        return ret;\n    }\n    private:\n\
+    \   }\n    bool on_path(int from, int to, int mid){\n        return dist(from,\
+    \ mid) + dist(mid, to) == dist(from, to);\n    }\n    int Auxiliary_Tree(std::vector<int>\
+    \ &ver){\n        int ret = 0, m = ver.size();\n        std::sort(ver.begin(),\
+    \ ver.end(), [&](int va, int vb) {return id[va] < id[vb];});\n        for(int\
+    \ i = 0; i < m; i++){\n            ret += depth[ver[i]];\n            ret -= depth[lca(ver[i],\
+    \ ver[i + 1 == m ? 0 : i + 1])];\n        }\n        return ret;\n    }\n    private:\n\
     \    std::vector<int> parent_or_size, depth2;\n    std::vector<std::pair<int,int>>\
     \ edge;\n    int leader(int v){\n        if(parent_or_size[v] < 0) return v;\n\
     \        int root = leader(parent_or_size[v]);\n        depth2[v] += depth2[parent_or_size[v]];\n\
@@ -77,7 +77,7 @@ data:
   isVerificationFile: true
   path: Test/Library Checker/Tree/lca_ufdoubling.test.cpp
   requiredBy: []
-  timestamp: '2023-06-24 18:59:30+09:00'
+  timestamp: '2023-06-26 01:57:31+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: Test/Library Checker/Tree/lca_ufdoubling.test.cpp
