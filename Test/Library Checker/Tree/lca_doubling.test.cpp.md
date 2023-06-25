@@ -30,28 +30,32 @@ data:
     \       for(auto &&u : g[v]){\n                if(id[u] != -1) continue;\n   \
     \             parent[0][u] = v;\n                depth[u] = depth[v] + 1;\n  \
     \              stk.emplace_back(u);\n            }\n        }\n    }\n    int\
-    \ lca(int u, int v){\n        if(depth[u] > depth[v]) std::swap(u, v);\n     \
-    \   int d = depth[v] - depth[u];\n        while(d){\n            v = parent[std::__lg(d\
+    \ lca(int u, int v){\n        assert(0 <= u && u < n);\n        assert(0 <= v\
+    \ && v < n);\n        if(depth[u] > depth[v]) std::swap(u, v);\n        int d\
+    \ = depth[v] - depth[u];\n        while(d){\n            v = parent[std::__lg(d\
     \ & -d)][v];\n            d -= d & -d;\n        }\n        if(u == v) return u;\n\
     \        for(int i = std::__lg(depth[v]); i >= 0; i--){\n            if(parent[i][u]\
     \ != parent[i][v]){\n                u = parent[i][u];\n                v = parent[i][v];\n\
     \            }\n        }\n        return parent[0][u];\n    }\n    int la(int\
     \ v, int d){\n        if(d > depth[v]) return -1;\n        while(d){\n       \
     \     v = parent[std::__lg(d & -d)][v];\n            d -= d & -d;\n        }\n\
-    \        return v;\n    }\n    int dist(int u, int v){\n        assert(0 <= u\
-    \ && u < n);\n        assert(0 <= v && v < n);\n        int lcav = lca(u, v);\n\
-    \        return depth[u] + depth[v] - 2 * depth[lcav];\n    }\n    bool on_path(int\
-    \ u, int v, int w){\n        return dist(u, w) + dist(w, v) == dist(u, v);\n \
-    \   }\n    int min_edge(std::vector<int> &ver){\n        int ret = 0, m = ver.size();\n\
-    \        std::sort(ver.begin(), ver.end(), [&](int va, int vb) {return id[va]\
-    \ < id[vb];});\n        for(int i = 0; i < m; i++){\n            ret += depth[ver[i]];\n\
-    \            ret -= depth[lca(ver[i], ver[i + 1 == m ? 0 : i + 1])];\n       \
-    \ }\n        return ret;\n    }\n};\n#line 5 \"Test/Library Checker/Tree/lca_doubling.test.cpp\"\
-    \n\nusing namespace std;\n\nint main(){\n    ios::sync_with_stdio(false);\n  \
-    \  cin.tie(0);\n    int N, Q, v, u;\n    cin >> N >> Q;\n    vector<vector<int>>\
-    \ G(N);\n    for(int i = 1; i < N; i++){\n        cin >> v;\n        G[v].emplace_back(i);\n\
-    \        G[i].emplace_back(v);\n    }\n    LCA_tree g(G);\n    while(Q--){\n \
-    \       cin >> u >> v;\n        cout << g.lca(u, v) << '\\n';\n    }\n}\n"
+    \        return v;\n    }\n    int la(int from, int to, int d){\n        int lcav\
+    \ = lca(from, to);\n        int len = depth[from] + depth[to] - 2 * depth[lcav];\n\
+    \        if(d > len) return -1;\n        return (d <= depth[from] - depth[lcav]\
+    \ ? la(from, d) : la(to, len - d));\n    }\n    int dist(int u, int v){\n    \
+    \    int lcav = lca(u, v);\n        return depth[u] + depth[v] - 2 * depth[lcav];\n\
+    \    }\n    bool on_path(int from, int to, int mid){\n        return dist(from,\
+    \ mid) + dist(mid, to) == dist(from, to);\n    }\n    int Auxiliary_Tree(std::vector<int>\
+    \ &ver){\n        int ret = 0, m = ver.size();\n        std::sort(ver.begin(),\
+    \ ver.end(), [&](int va, int vb) {return id[va] < id[vb];});\n        for(int\
+    \ i = 0; i < m; i++){\n            ret += depth[ver[i]];\n            ret -= depth[lca(ver[i],\
+    \ ver[i + 1 == m ? 0 : i + 1])];\n        }\n        return ret;\n    }\n};\n\
+    #line 5 \"Test/Library Checker/Tree/lca_doubling.test.cpp\"\n\nusing namespace\
+    \ std;\n\nint main(){\n    ios::sync_with_stdio(false);\n    cin.tie(0);\n   \
+    \ int N, Q, v, u;\n    cin >> N >> Q;\n    vector<vector<int>> G(N);\n    for(int\
+    \ i = 1; i < N; i++){\n        cin >> v;\n        G[v].emplace_back(i);\n    \
+    \    G[i].emplace_back(v);\n    }\n    LCA_tree g(G);\n    while(Q--){\n     \
+    \   cin >> u >> v;\n        cout << g.lca(u, v) << '\\n';\n    }\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/lca\"\n\n#include <bits/stdc++.h>\n\
     #include \"Tree/lca_doubling.hpp\"\n\nusing namespace std;\n\nint main(){\n  \
     \  ios::sync_with_stdio(false);\n    cin.tie(0);\n    int N, Q, v, u;\n    cin\
@@ -64,7 +68,7 @@ data:
   isVerificationFile: true
   path: Test/Library Checker/Tree/lca_doubling.test.cpp
   requiredBy: []
-  timestamp: '2023-06-24 15:29:54+09:00'
+  timestamp: '2023-06-26 01:44:50+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: Test/Library Checker/Tree/lca_doubling.test.cpp
