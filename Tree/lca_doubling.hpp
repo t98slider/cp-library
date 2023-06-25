@@ -27,6 +27,8 @@ struct LCA_tree {
         }
     }
     int lca(int u, int v){
+        assert(0 <= u && u < n);
+        assert(0 <= v && v < n);
         if(depth[u] > depth[v]) std::swap(u, v);
         int d = depth[v] - depth[u];
         while(d){
@@ -50,16 +52,20 @@ struct LCA_tree {
         }
         return v;
     }
+    int la(int from, int to, int d){
+        int lcav = lca(from, to);
+        int len = depth[from] + depth[to] - 2 * depth[lcav];
+        if(d > len) return -1;
+        return (d <= depth[from] - depth[lcav] ? la(from, d) : la(to, len - d));
+    }
     int dist(int u, int v){
-        assert(0 <= u && u < n);
-        assert(0 <= v && v < n);
         int lcav = lca(u, v);
         return depth[u] + depth[v] - 2 * depth[lcav];
     }
-    bool on_path(int u, int v, int w){
-        return dist(u, w) + dist(w, v) == dist(u, v);
+    bool on_path(int from, int to, int mid){
+        return dist(from, mid) + dist(mid, to) == dist(from, to);
     }
-    int min_edge(std::vector<int> &ver){
+    int Auxiliary_Tree(std::vector<int> &ver){
         int ret = 0, m = ver.size();
         std::sort(ver.begin(), ver.end(), [&](int va, int vb) {return id[va] < id[vb];});
         for(int i = 0; i < m; i++){
