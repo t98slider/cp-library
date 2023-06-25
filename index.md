@@ -87,6 +87,9 @@ data:
   - name: Test/Library Checker/Tree
     pages:
     - icon: ':heavy_check_mark:'
+      path: Test/Library Checker/Tree/jump_on_tree_doubling.test.cpp
+      title: Test/Library Checker/Tree/jump_on_tree_doubling.test.cpp
+    - icon: ':heavy_check_mark:'
       path: Test/Library Checker/Tree/lca_doubling.test.cpp
       title: Test/Library Checker/Tree/lca_doubling.test.cpp
     - icon: ':heavy_check_mark:'
