@@ -137,3 +137,8 @@ HL分解 (HLD, Heavy-Light-Decomposition) を行うためのライブラリ。<b
 | 関数名など   | 機能        | 計算量    |
 | ------------|----------- | --------- |
 |`Heavy_Light_Decomposition(std::vector<std::vector<int>> g)`| コンストラクタに木を渡すと、HL分解される。| $\text{O} (N)$ | 
+|(1) `int la(int v, int d)` <br>(2) `int la(int from, int to, int d)`|(1)頂点 $v$ から根に向かって距離 $d$ 進んだ頂点を返す。<br>(2)頂点 $\text{from}$ から頂点 $\text{to}$ に向かって距離 $d$ 進んだ頂点を返す。<br> 存在しない場合は `-1` を返す。| $\text{O}(\log N)$ |
+|`int lca(int u, int v)`|頂点 $u$ と頂点 $v$ のLCAを返す。| $\text{O}(\log N)$ |
+|`int dist(int u, int v)`|頂点 $u$ と頂点 $v$ の距離を出力する。| $\text{O}(\log N)$ |
+|`int a[v]`|頂点 $v$ が行きがけ順で何番目に訪問された頂点であるかを返す。配列などでここに対応する添え字の値を更新すると、頂点 $v$ に対する値を更新したことになる。|$\text{O}(1)$|
+|`T query(int u, int v, const T &identity, const Q &qf, const F &f, bool edge = false)`| 頂点 $u$ - $v$ 間の頂点の値に対して演算を行う。第3引数以降は以下のようなものを渡す。<br>・ $\text{identity}$ ：演算に対応する単位元<br>・ $\text{qf}$ ：列に対する区間収得クエリ。<br>・ $\text{f}$ : 列と列の結合クエリ。<br>・ $\text{edge}$ ：辺に対する演算であるか(省略可能)。省略した場合、頂点に対する演算であるとして計算する。| $O(\log N)$ |
