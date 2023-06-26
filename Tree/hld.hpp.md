@@ -132,11 +132,11 @@ title: "HL\u5206\u89E3 (HLD, Heavy-Light-Decomposition)"
 ## 概要
 HL分解 (HLD, Heavy-Light-Decomposition) を行うためのライブラリ。<br>
 それぞれの頂点に対して、 子の頂点のうち部分木の頂点数が最も大きい頂点を1つ選択して Heavy Edge で結ぶことで $\log N$ 個程度のパスに分解でき、パスの更新クエリに対して高速に処理できる。<br>
-<a href = "https://ei1333.github.io/luzhiled/snippets/tree/heavy-light-decomposition.html"> HL分解(Heavy-Light-Decomposition) | Luzhiled's memo </a> をかなり参考にした。<br>
+実装は <a href = "https://ei1333.github.io/luzhiled/snippets/tree/heavy-light-decomposition.html"> HL分解(Heavy-Light-Decomposition) | Luzhiled's memo </a> をかなり参考にした。<br>
 
 | 関数名など   | 機能        | 計算量    |
 | ------------|----------- | --------- |
-|`Heavy_Light_Decomposition(std::vector<std::vector<int>> g)`| コンストラクタに木を渡すと、HL分解される。| $\text{O} (N)$ | 
+|`Heavy_Light_Decomposition`<br>`(std::vector<std::vector<int>> g)`| コンストラクタに木を渡すと、HL分解される。| $\text{O} (N)$ | 
 |(1) `int la(int v, int d)` <br>(2) `int la(int from, int to, int d)`|(1)頂点 $v$ から根に向かって距離 $d$ 進んだ頂点を返す。<br>(2)頂点 $\text{from}$ から頂点 $\text{to}$ に向かって距離 $d$ 進んだ頂点を返す。<br> 存在しない場合は `-1` を返す。| $\text{O}(\log N)$ |
 |`int lca(int u, int v)`|頂点 $u$ と頂点 $v$ のLCAを返す。| $\text{O}(\log N)$ |
 |`int dist(int u, int v)`|頂点 $u$ と頂点 $v$ の距離を出力する。| $\text{O}(\log N)$ |
