@@ -7,11 +7,11 @@ struct Heavy_Light_Decomposition{
         dfs_size(0, -1);
         dfs_hld(0);
     }
-    const int& operator[](int v) const {
+    const int operator[](int v) const {
         assert(0 <= v && v < N);
         return ent[v];
     }
-    int& operator[](int v) { 
+    int operator[](int v) { 
         assert(0 <= v && v < N);
         return ent[v];
     }
