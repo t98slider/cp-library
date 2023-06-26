@@ -4,17 +4,17 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
-  _pathExtension: cpp
+  _pathExtension: hpp
   _verificationStatusIcon: ':warning:'
   attributes:
     links: []
-  bundledCode: "#line 1 \"Tree/hld.cpp\"\nstruct Heavy_Light_Decomposition{\n    int\
+  bundledCode: "#line 1 \"Tree/hld.hpp\"\nstruct Heavy_Light_Decomposition{\n    int\
     \ N, tim = 0;\n    std::vector<int> sz, ent, leader, order, par;\n    std::vector<std::vector<int>>\
     \ &G;\n    Heavy_Light_Decomposition(std::vector<std::vector<int>> &g) : \n  \
     \          N(g.size()), G(g), sz(N), ent(N), leader(N), order(N), par(N) {\n \
-    \       dfs_size(0, -1);\n        dfs_hld(0);\n    }\n    const int& operator[](int\
+    \       dfs_size(0, -1);\n        dfs_hld(0);\n    }\n    const int operator[](int\
     \ v) const {\n        assert(0 <= v && v < N);\n        return ent[v];\n    }\n\
-    \    int& operator[](int v) { \n        assert(0 <= v && v < N);\n        return\
+    \    int operator[](int v) { \n        assert(0 <= v && v < N);\n        return\
     \ ent[v];\n    }\n    int la(int v, int k) {\n        while(true) {\n        \
     \    int u = leader[v];\n            if(ent[v] - k >= ent[u]) return order[ent[v]\
     \ - k];\n            k -= ent[v] - ent[u] + 1;\n            v = par[u];\n    \
@@ -66,9 +66,9 @@ data:
   code: "struct Heavy_Light_Decomposition{\n    int N, tim = 0;\n    std::vector<int>\
     \ sz, ent, leader, order, par;\n    std::vector<std::vector<int>> &G;\n    Heavy_Light_Decomposition(std::vector<std::vector<int>>\
     \ &g) : \n            N(g.size()), G(g), sz(N), ent(N), leader(N), order(N), par(N)\
-    \ {\n        dfs_size(0, -1);\n        dfs_hld(0);\n    }\n    const int& operator[](int\
+    \ {\n        dfs_size(0, -1);\n        dfs_hld(0);\n    }\n    const int operator[](int\
     \ v) const {\n        assert(0 <= v && v < N);\n        return ent[v];\n    }\n\
-    \    int& operator[](int v) { \n        assert(0 <= v && v < N);\n        return\
+    \    int operator[](int v) { \n        assert(0 <= v && v < N);\n        return\
     \ ent[v];\n    }\n    int la(int v, int k) {\n        while(true) {\n        \
     \    int u = leader[v];\n            if(ent[v] - k >= ent[u]) return order[ent[v]\
     \ - k];\n            k -= ent[v] - ent[u] + 1;\n            v = par[u];\n    \
@@ -119,15 +119,21 @@ data:
     \        }\n    }\n};\n"
   dependsOn: []
   isVerificationFile: false
-  path: Tree/hld.cpp
+  path: Tree/hld.hpp
   requiredBy: []
-  timestamp: '2023-06-27 00:15:09+09:00'
+  timestamp: '2023-06-27 00:29:18+09:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: Tree/hld.cpp
+documentation_of: Tree/hld.hpp
 layout: document
-redirect_from:
-- /library/Tree/hld.cpp
-- /library/Tree/hld.cpp.html
-title: Tree/hld.cpp
+title: "HL\u5206\u89E3 (HLD, Heavy-Light-Decomposition)"
 ---
+
+## 概要
+HL分解 (HLD, Heavy-Light-Decomposition) を行うためのライブラリ。<br>
+それぞれの頂点に対して、 子の頂点のうち部分木の頂点数が最も大きい頂点を1つ選択して Heavy Edge で結ぶことで $\log N$ 個程度のパスに分解でき、パスの更新クエリに対して高速に処理できる。<br>
+<a href = "https://ei1333.github.io/luzhiled/snippets/tree/heavy-light-decomposition.html"> HL分解(Heavy-Light-Decomposition) | Luzhiled's memo </a> をかなり参考にした。<br>
+
+| 関数名など   | 機能        | 計算量    |
+| ------------|----------- | --------- |
+|`Heavy_Light_Decomposition(std::vector<std::vector<int>> g)`| コンストラクタに木を渡すと、HL分解される。| $\text{O} (N)$ | 

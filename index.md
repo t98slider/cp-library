@@ -41,8 +41,8 @@ data:
   - name: Tree
     pages:
     - icon: ':warning:'
-      path: Tree/hld.cpp
-      title: Tree/hld.cpp
+      path: Tree/hld.hpp
+      title: "HL\u5206\u89E3 (HLD, Heavy-Light-Decomposition)"
     - icon: ':heavy_check_mark:'
       path: Tree/lca_doubling.hpp
       title: "\u6700\u5C0F\u5171\u901A\u7956\u5148 (LCA, Lowest Common Ancestor) (\u30BF\
