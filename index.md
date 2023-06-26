@@ -40,6 +40,9 @@ data:
       title: Math/modint_61bit.hpp
   - name: Tree
     pages:
+    - icon: ':warning:'
+      path: Tree/hld.cpp
+      title: Tree/hld.cpp
     - icon: ':heavy_check_mark:'
       path: Tree/lca_doubling.hpp
       title: "\u6700\u5C0F\u5171\u901A\u7956\u5148 (LCA, Lowest Common Ancestor) (\u30BF\
