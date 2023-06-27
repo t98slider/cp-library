@@ -102,6 +102,9 @@ data:
       path: Test/Library Checker/Tree/vertex_add_path_sum01.test.cpp
       title: Test/Library Checker/Tree/vertex_add_path_sum01.test.cpp
     - icon: ':heavy_check_mark:'
+      path: Test/Library Checker/Tree/vertex_add_subtree_sum01.test.cpp
+      title: Test/Library Checker/Tree/vertex_add_subtree_sum01.test.cpp
+    - icon: ':heavy_check_mark:'
       path: Test/Library Checker/Tree/vertex_set_path_composite01.test.cpp
       title: Test/Library Checker/Tree/vertex_set_path_composite01.test.cpp
   - name: Test/yukicoder

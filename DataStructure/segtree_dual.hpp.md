@@ -6,6 +6,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: Test/Aizu Online Judge/DSL/DSL_2_D.test.cpp
     title: Test/Aizu Online Judge/DSL/DSL_2_D.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: Test/Library Checker/Tree/vertex_add_subtree_sum01.test.cpp
+    title: Test/Library Checker/Tree/vertex_add_subtree_sum01.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -66,6 +69,7 @@ data:
   timestamp: '2023-06-21 18:18:30+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - Test/Library Checker/Tree/vertex_add_subtree_sum01.test.cpp
   - Test/Aizu Online Judge/DSL/DSL_2_D.test.cpp
 documentation_of: DataStructure/segtree_dual.hpp
 layout: document
