@@ -6,6 +6,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: Test/Aizu Online Judge/DSL/DSL_2_A.test.cpp
     title: Test/Aizu Online Judge/DSL/DSL_2_A.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: Test/Library Checker/Tree/vertex_set_path_composite01.test.cpp
+    title: Test/Library Checker/Tree/vertex_set_path_composite01.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -99,6 +102,7 @@ data:
   timestamp: '2023-06-18 19:57:55+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - Test/Library Checker/Tree/vertex_set_path_composite01.test.cpp
   - Test/Aizu Online Judge/DSL/DSL_2_A.test.cpp
 documentation_of: DataStructure/segtree.hpp
 layout: document
