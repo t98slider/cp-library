@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
+  _extendedVerifiedWith:
+  - icon: ':heavy_check_mark:'
+    path: Test/Library Checker/Tree/vertex_add_path_sum01.test.cpp
+    title: Test/Library Checker/Tree/vertex_add_path_sum01.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links: []
   bundledCode: "#line 1 \"Tree/hld.hpp\"\nstruct Heavy_Light_Decomposition{\n    int\
@@ -122,8 +125,9 @@ data:
   path: Tree/hld.hpp
   requiredBy: []
   timestamp: '2023-06-27 00:29:18+09:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_AC
+  verifiedWith:
+  - Test/Library Checker/Tree/vertex_add_path_sum01.test.cpp
 documentation_of: Tree/hld.hpp
 layout: document
 title: "HL\u5206\u89E3 (HLD, Heavy-Light-Decomposition)"

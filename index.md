@@ -40,7 +40,7 @@ data:
       title: Math/modint_61bit.hpp
   - name: Tree
     pages:
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: Tree/hld.hpp
       title: "HL\u5206\u89E3 (HLD, Heavy-Light-Decomposition)"
     - icon: ':heavy_check_mark:'
@@ -98,6 +98,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Test/Library Checker/Tree/lca_ufdoubling.test.cpp
       title: Test/Library Checker/Tree/lca_ufdoubling.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: Test/Library Checker/Tree/vertex_add_path_sum01.test.cpp
+      title: Test/Library Checker/Tree/vertex_add_path_sum01.test.cpp
   - name: Test/yukicoder
     pages:
     - icon: ':heavy_check_mark:'

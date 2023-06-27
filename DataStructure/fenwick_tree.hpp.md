@@ -9,6 +9,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: Test/Library Checker/Data Structure/point_add_range_sum.test.cpp
     title: Test/Library Checker/Data Structure/point_add_range_sum.test.cpp
+  - icon: ':heavy_check_mark:'
+    path: Test/Library Checker/Tree/vertex_add_path_sum01.test.cpp
+    title: Test/Library Checker/Tree/vertex_add_path_sum01.test.cpp
   _isVerificationFailed: false
   _pathExtension: hpp
   _verificationStatusIcon: ':heavy_check_mark:'
@@ -40,6 +43,7 @@ data:
   timestamp: '2023-06-19 14:35:10+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
+  - Test/Library Checker/Tree/vertex_add_path_sum01.test.cpp
   - Test/Library Checker/Data Structure/point_add_range_sum.test.cpp
   - Test/Aizu Online Judge/ALDS1/ALDS1_05_D.test.cpp
 documentation_of: DataStructure/fenwick_tree.hpp
