@@ -9,7 +9,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: DataStructure/CumulativeSum2D_imos.hpp
       title: "2\u6B21\u5143\u3044\u3082\u3059\u6CD5"
-    - icon: ':warning:'
+    - icon: ':heavy_check_mark:'
       path: DataStructure/SparseTable.hpp
       title: DataStructure/SparseTable.hpp
     - icon: ':heavy_check_mark:'
@@ -82,6 +82,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: Test/Library Checker/Data Structure/point_add_range_sum.test.cpp
       title: Test/Library Checker/Data Structure/point_add_range_sum.test.cpp
+    - icon: ':heavy_check_mark:'
+      path: Test/Library Checker/Data Structure/staticrmq01.test.cpp
+      title: Test/Library Checker/Data Structure/staticrmq01.test.cpp
     - icon: ':heavy_check_mark:'
       path: Test/Library Checker/Data Structure/unionfind.test.cpp
       title: Test/Library Checker/Data Structure/unionfind.test.cpp
