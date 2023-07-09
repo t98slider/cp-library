@@ -74,22 +74,23 @@ struct Heavy_Light_Decomposition{
         return f( qf(ent[u] + edge, ent[v] + 1), ans);
     }
     template< typename T, typename Q1, typename Q2, typename F >
-    T noncom_query(int u, int v, const T &identity, const Q1 &up_f, const Q2 &down_f, const F &f, bool edge = false) {
+    T noncom_query(int u, int v, const T &identity, 
+                   const Q1 &qf, const Q2 &rev_qf, const F &f, bool edge = false) {
         T sml = identity, smr = identity;
         do{
             if(leader[u] == leader[v]) break;
             if(ent[u] < ent[v]){
-                smr = f( up_f(ent[leader[v]], ent[v] + 1), smr);
+                smr = f( qf(ent[leader[v]], ent[v] + 1), smr);
                 v = par[leader[v]];
             }else{
-                sml = f( sml, down_f(ent[leader[u]], ent[u] + 1));
+                sml = f( sml, rev_qf(ent[leader[u]], ent[u] + 1));
                 u = par[leader[u]];
             }
         }while(true);
         if(ent[u] < ent[v]){
-            return f(sml,  f( up_f(ent[u] + edge, ent[v] + 1), smr));
+            return f(sml,  f( qf(ent[u] + edge, ent[v] + 1), smr));
         }else{
-            return f(f(sml, down_f(ent[v] + edge, ent[u] + 1)), smr);
+            return f(f(sml, rev_qf(ent[v] + edge, ent[u] + 1)), smr);
         }
     }
     template< typename Q >
