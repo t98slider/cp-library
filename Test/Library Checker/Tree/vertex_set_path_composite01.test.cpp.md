@@ -55,15 +55,15 @@ data:
     \ ent[v] + 1), ans);\n            v = par[leader[v]];\n        }while(true);\n\
     \        return f( qf(ent[u] + edge, ent[v] + 1), ans);\n    }\n    template<\
     \ typename T, typename Q1, typename Q2, typename F >\n    T noncom_query(int u,\
-    \ int v, const T &identity, const Q1 &up_f, const Q2 &down_f, const F &f, bool\
-    \ edge = false) {\n        T sml = identity, smr = identity;\n        do{\n  \
-    \          if(leader[u] == leader[v]) break;\n            if(ent[u] < ent[v]){\n\
-    \                smr = f( up_f(ent[leader[v]], ent[v] + 1), smr);\n          \
-    \      v = par[leader[v]];\n            }else{\n                sml = f( sml,\
-    \ down_f(ent[leader[u]], ent[u] + 1));\n                u = par[leader[u]];\n\
+    \ int v, const T &identity, \n                   const Q1 &qf, const Q2 &rev_qf,\
+    \ const F &f, bool edge = false) {\n        T sml = identity, smr = identity;\n\
+    \        do{\n            if(leader[u] == leader[v]) break;\n            if(ent[u]\
+    \ < ent[v]){\n                smr = f( qf(ent[leader[v]], ent[v] + 1), smr);\n\
+    \                v = par[leader[v]];\n            }else{\n                sml\
+    \ = f( sml, rev_qf(ent[leader[u]], ent[u] + 1));\n                u = par[leader[u]];\n\
     \            }\n        }while(true);\n        if(ent[u] < ent[v]){\n        \
-    \    return f(sml,  f( up_f(ent[u] + edge, ent[v] + 1), smr));\n        }else{\n\
-    \            return f(f(sml, down_f(ent[v] + edge, ent[u] + 1)), smr);\n     \
+    \    return f(sml,  f( qf(ent[u] + edge, ent[v] + 1), smr));\n        }else{\n\
+    \            return f(f(sml, rev_qf(ent[v] + edge, ent[u] + 1)), smr);\n     \
     \   }\n    }\n    template< typename Q >\n    void update(int u, int v, const\
     \ Q &q, bool edge = false) {\n        do{\n            if(ent[u] > ent[v]) std::swap(u,\
     \ v);\n            if(leader[u] == leader[v]) break;\n            q(ent[leader[v]],\
@@ -193,7 +193,7 @@ data:
   isVerificationFile: true
   path: Test/Library Checker/Tree/vertex_set_path_composite01.test.cpp
   requiredBy: []
-  timestamp: '2023-06-28 00:53:42+09:00'
+  timestamp: '2023-07-09 14:26:58+09:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: Test/Library Checker/Tree/vertex_set_path_composite01.test.cpp

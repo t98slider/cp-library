@@ -52,8 +52,8 @@ data:
   timestamp: '2023-06-22 02:51:49+09:00'
   verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
-  - Test/Aizu Online Judge/ALDS1/ALDS1_14_C.test.cpp
   - Test/yukicoder/yuki0755.test.cpp
+  - Test/Aizu Online Judge/ALDS1/ALDS1_14_C.test.cpp
 documentation_of: DataStructure/CumulativeSum2D.hpp
 layout: document
 title: "2\u6B21\u5143\u7D2F\u7A4D\u548C"
